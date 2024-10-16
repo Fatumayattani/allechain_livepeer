@@ -34,7 +34,7 @@ To provide **independent creators** with a fair, secure, and engaging platform t
 
 ## 4. Product and Service Offerings  
 ### 1. **Music Streaming**  
-- A space for independent artists to upload, share, and monetize their music.  
+- A space for independent artists to share and monetize their music.  
 - **Custom playlists and discovery features** to enhance user experience.
 
 ### 2. **Podcast Hosting**  
