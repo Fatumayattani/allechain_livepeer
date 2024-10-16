@@ -13,7 +13,7 @@ const Navbar = () => {
             <img onClick={()=>navigate(1)} className='w-8 bg-black p-2 rounded-2xl cursor-pointer' src={assets.arrow_right} alt="" />
         </div>
         <div className='flex items-center gap-4'>
-            <p className='bg-white text-black text-[15px] px-4 py-1 rounded-2xl hidden md:block cursor-pointer'>Connect Wallet</p>
+            <p className='bg-white text-black text-[18px] px-4 py-1 rounded-2xl hidden md:block cursor-pointer'>Connect Wallet</p>
             <p className='bg-black py-1 px-3 rounded-2xl text-[15px] cursor-pointer'>Install App</p>
             <p className='bg-pink-500 text-black w-7 h-7 rounded-full flex items-center justify-center'>A</p>
 
