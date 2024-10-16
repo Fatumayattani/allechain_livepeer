@@ -9,7 +9,6 @@ const Navbar = () => {
     <>
       <div className='w-full flex justify-between items-center font-semibold'>
         <div className='flex items-center gap-2'>
-        <img src={assets.ac_logo} alt="ac_logo" className='w-10 h-10 cursor-pointer'  onClick={() => navigate('/')} />
           <img onClick={()=>navigate(-1)} className='w-8 bg-black p-2 rounded-2xl cursor-pointer' src={assets.arrow_left} alt="" />
             <img onClick={()=>navigate(1)} className='w-8 bg-black p-2 rounded-2xl cursor-pointer' src={assets.arrow_right} alt="" />
         </div>
