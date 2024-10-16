@@ -102,3 +102,10 @@ To provide **independent creators** with a fair, secure, and engaging platform t
 - Offer early creators **discounts on platform fees** or **free tokens** for top performers.
 
 ---
+
+## 8. Operations Plan  
+### Key Activities:
+- **Platform Development:** Build and maintain the web and mobile applications.  
+- **Creator Onboarding:** Collaborate with artists and podcasters to bring them onto the platform.  
+- **Content Moderation:** Ensure all uploaded content meets community guidelines.  
+- **Customer Support:** Provide 24/7 support for users and creators.
