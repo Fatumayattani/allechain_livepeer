@@ -68,7 +68,7 @@ export const assets = {
     arrow_right,
     spotify_logo,
     clock_icon,
-    ac_logo,
+    allechain_logo,
 }
 
 export const albumsData = [
