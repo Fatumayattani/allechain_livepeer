@@ -1,7 +1,9 @@
 import React from 'react';
 import { assets } from '../assets/assets';
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
+  const navigate = useNavigate(); 
     return (
       <div className='w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex'>
           <div className='bg-[#121212] h-[15%] rounded flex flex-col justify-around'>
@@ -33,7 +35,12 @@ const Sidebar = () => {
         <div className='p-4 bg-[#242424] m-2 font-semibold flex flex-col items-start justify-start gap-1 pl-4 mt-4'>
           <h1>Join Live Concerts</h1>
           <p className='font-light'>Browse through live concerts happening right now</p>
-          <button className='px-4 py-1.5 bg-white text-[15px] text-black rounded-full mt-4'>Browse Live Concerts</button>
+          <button 
+            className='px-4 py-1.5 bg-white text-[15px] text-black rounded-full mt-4'
+            onClick={() => navigate('/live-concerts')} // Correctly place onClick here
+          >
+            Browse Live Concerts
+          </button>
         </div>
       </div>
     </div>
