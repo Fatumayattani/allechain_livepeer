@@ -109,3 +109,13 @@ To provide **independent creators** with a fair, secure, and engaging platform t
 - **Creator Onboarding:** Collaborate with artists and podcasters to bring them onto the platform.  
 - **Content Moderation:** Ensure all uploaded content meets community guidelines.  
 - **Customer Support:** Provide 24/7 support for users and creators.
+
+---
+
+## 10. Risks and Challenges  
+1. **Competition:** Competing with giants like Spotify and YouTube.  
+2. **Adoption of Blockchain Technology:** Educating users and artists on blockchain and tokens.  
+3. **Regulatory Risks:** Navigating copyright and licensing laws.  
+4. **Platform Security:** Ensuring the platform remains secure from cyber-attacks.  
+
+---
