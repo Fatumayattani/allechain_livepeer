@@ -72,3 +72,13 @@ To provide **independent creators** with a fair, secure, and engaging platform t
    - Livestreamed events may have paid ticket options for exclusive access.
 
 ---
+
+## 6. Technology Stack  
+- **Frontend:** Built with **React.js** for a dynamic user interface.  
+- **Styling:** Utilizes **Tailwind CSS** for responsive design.  
+- **Streaming Infrastructure:** Powered by **Livepeer** for decentralized, scalable livestreaming.  
+- **Blockchain:** Smart contracts on Ethereum or ICP (Internet Computer) to manage transactions and ownership.  
+- **Wormhole:** For **cross-chain token transfers** and interoperability.  
+- **AI Tools:** To provide **personalized recommendations** and **automated content moderation**.
+
+---
