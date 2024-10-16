@@ -10,3 +10,8 @@
 - **Tokenized tipping system** to support artists directly.
 
 ---
+## 2. Market Analysis  
+### Industry Overview:
+- The **global music streaming market** is projected to reach **$103 billion by 2030**.  
+- **Podcasts** have become increasingly popular, with an estimated **424 million listeners worldwide** by 2024.  
+- The **livestreaming market** is thriving, especially with concerts and live performances, which saw significant growth during the pandemic.
