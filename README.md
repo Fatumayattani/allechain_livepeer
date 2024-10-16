@@ -1,18 +1,12 @@
-# AlleChain
+# **AlleChain**
+ 
+**AlleChain** is a groundbreaking decentralized streaming platform that leverages **Livepeer** to provide real-time livestreaming capabilities for **independent artists, podcasters, and content creators**. By integrating blockchain technology, AlleChain ensures transparent transactions, fair artist compensation, and direct fan engagement through NFTs and tokenized support mechanisms. Our mission is to revolutionize how creators and fans connect, creating a secure, scalable, and engaging platform for audio lovers worldwide.
 
-AlleChain is a decentralized streaming platform that empowers **independent artists, podcasters, and content creators** by offering **music, podcast hosting, and real-time livestreaming capabilities.** Leveraging **blockchain technology**, AlleChain ensures transparent transactions, fair artist compensation, and direct fan engagement through NFTs and tokenized support mechanisms.
-
-## Table of Contents
-- [1. Executive Summary](#1-executive-summary)
-- [2. Market Analysis](#2-market-analysis)
-- [3. Vision and Mission](#3-vision-and-mission)
-- [4. Product and Service Offerings](#4-product-and-service-offerings)
-- [5. Revenue Model](#5-revenue-model)
-- [6. Technology Stack](#6-technology-stack)
-- [7. Marketing Strategy](#7-marketing-strategy)
-- [8. Operations Plan](#8-operations-plan)
-- [9. Financial Plan](#9-financial-plan)
-- [10. Risks and Challenges](#10-risks-and-challenges)
-- [11. Conclusion](#11-conclusion)
+### Key Features:
+- **Music streaming** for independent artists.
+- **Podcast hosting** with built-in audience interaction tools.
+- **Livestreaming events** for performances, powered by Livepeer for real-time fan engagement.
+- **NFTs** for exclusive content.
+- **Tokenized tipping system** to support artists directly.
 
 ---
