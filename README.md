@@ -23,3 +23,11 @@
 - **Tokenized economy** and NFTs to offer fans ownership of exclusive moments.
 
 ---
+## 3. Vision and Mission  
+**Vision:**  
+To create a world where **music, podcasts, and live performances** transcend borders through **decentralization**, fostering direct connections between creators and their audiences.
+
+**Mission:**  
+To provide **independent creators** with a fair, secure, and engaging platform that offers **uninterrupted streaming, transparent monetization, and community-driven support.**
+
+---
