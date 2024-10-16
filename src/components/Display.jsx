@@ -27,6 +27,7 @@ const Display = () => {
        <Routes>
         <Route path='/' element={<DisplayHome/>} />
         <Route path='/album/:id' element={<DisplayAlbum/>} />
+        <Route path='/live-concerts' element={<LiveConcerts />} /> 
         Route
         </Routes> 
       
