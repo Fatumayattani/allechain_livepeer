@@ -53,3 +53,22 @@ To provide **independent creators** with a fair, secure, and engaging platform t
 - Fans can pay to attend live concerts using tokens, connecting their wallets for seamless payment processing.
 
 ---
+
+## 5. Revenue Model  
+1. **Subscription Plans:**  
+   - Free tier with ads and premium, ad-free plans for listeners.  
+   - Premium users unlock high-quality streaming and exclusive content.
+
+2. **Transaction Fees:**  
+   - A **small commission** on token transactions.
+
+3. **Tipping System:**  
+   - Fans can purchase tokens and tip artists or creators during live streams.
+
+4. **Sponsored Content:**  
+   - Ad placements for podcasts and music.
+
+5. **Event Tickets:**  
+   - Livestreamed events may have paid ticket options for exclusive access.
+
+---
