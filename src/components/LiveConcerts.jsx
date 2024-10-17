@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { Livepeer } from 'livepeer'
 
-const apiKey = 'YOUR_API_KEY'; // Replace with your Livepeer API Key
+const apiKey = '6da76e16-f4bb-4f68-9426-abc7cb51abec'; // Replace with your Livepeer API Key
 const livepeer = new Livepeer({ apiKey });
 
 const LiveConcerts = () => {
