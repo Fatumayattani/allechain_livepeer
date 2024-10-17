@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import videojs from 'video.js';
-import 'video.js/dist/video-js.css';
 
 const LiveConcerts = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const videoRef = React.useRef(null);
-  const playbackId = '46eeduidcicwywxy'; // Your Playback ID
+  
+  // Use your Playback ID here
+  const playbackId = '46eeduidcicwywxy'; 
+  // Use the Playback URL from Livepeer Studio
+  const playbackUrl = `https://livepeercdn.studio/hl${playbackId}/index.m3u8`; // Corrected Playback URL
 
   useEffect(() => {
     const player = videojs(videoRef.current, {
@@ -15,11 +18,13 @@ const LiveConcerts = () => {
       preload: 'auto',
       sources: [
         {
-          src: `https://livepeercdn.studio/hls/${playbackId}/index.m3u8`, // Constructed URL using Playback ID
+          src: playbackUrl, // Set the correct Playback URL here
           type: 'application/x-mpegURL',
         },
       ],
     });
+
+    console.log('Player initialized:', player); // Check if player is initialized
 
     player.on('error', (err) => {
       setError('Error loading video: ' + err.message);
@@ -32,7 +37,7 @@ const LiveConcerts = () => {
         player.dispose(); // Clean up on component unmount
       }
     };
-  }, [playbackId]);
+  }, [playbackUrl]);
 
   return (
     <div className="p-4">
