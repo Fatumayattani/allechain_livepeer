@@ -1,8 +1,7 @@
+import React, { useEffect, useState } from 'react';
+import { Livepeer } from 'livepeer';
 
-import React, { useEffect, useState } from 'react'
-import { Livepeer } from 'livepeer'
-
-const apiKey = import.meta.env.VITE_LIVEPEER_API_KEY;
+const apiKey = import.meta.env.VITE_LIVEPEER_API_KEY; // Ensure your API key is set in .env file
 const livepeer = new Livepeer({ apiKey });
 
 const LiveConcerts = () => {
@@ -29,6 +28,13 @@ const LiveConcerts = () => {
     fetchStreams();
   }, []);
 
+  // Here is your livestream detail
+  const livestreamDetails = {
+    streamId: "46eee31c-dfa5-4a29-9585-e706dc3d1d0d",
+    playbackId: "46eeduidcicwywxy",
+    playbackUrl: "https://livepeercdn.studio/hls/46eeduidcicwywxy/index.m3u8",
+  };
+
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold">Live Concerts</h1>
@@ -51,10 +57,24 @@ const LiveConcerts = () => {
               />
             </div>
           ))}
+          {/* Displaying the specific livestream details */}
+          <h2 className="text-xl mt-4">Current Livestream</h2>
+          <div className="my-4">
+            <p>Stream ID: {livestreamDetails.streamId}</p>
+            <p>Playback ID: {livestreamDetails.playbackId}</p>
+            <iframe
+              src={livestreamDetails.playbackUrl}
+              width="100%"
+              height="400"
+              frameBorder="0"
+              allowFullScreen
+              title="Current Livestream"
+            />
+          </div>
         </div>
       )}
     </div>
   );
 };
 
-export default LiveConcerts
+export default LiveConcerts;
