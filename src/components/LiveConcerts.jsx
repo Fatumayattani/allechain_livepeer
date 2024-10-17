@@ -1,80 +1,52 @@
-import React, { useEffect, useState } from 'react';
-import { Livepeer } from 'livepeer';
-
-const apiKey = import.meta.env.VITE_LIVEPEER_API_KEY; // Ensure your API key is set in .env file
-const livepeer = new Livepeer({ apiKey });
+import React, { useEffect, useState } from 'react'
 
 const LiveConcerts = () => {
-  const [streams, setStreams] = useState([]);
+  const [stream, setStream] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchStreams = async () => {
+    const fetchStreamDetails = async () => {
       try {
-        const response = await livepeer.stream.list(); // Fetch the list of streams
-        if (response && response.length > 0) {
-          setStreams(response); // Set streams if available
-        } else {
-          setError("No streams available");
-        }
+        // Assuming you already have the Playback ID
+        const playbackId = 'YOUR_PLAYBACK_ID'; // Replace with your actual Playback ID
+        setStream({ playbackId });
       } catch (err) {
-        setError("Error fetching streams: " + err.message);
+        setError('Error fetching stream: ' + err.message);
       } finally {
-        setLoading(false); // Set loading to false after the fetch
+        setLoading(false);
       }
     };
 
-    fetchStreams();
+    fetchStreamDetails();
   }, []);
-
-  // Here is your livestream detail
-  const livestreamDetails = {
-    streamId: "46eee31c-dfa5-4a29-9585-e706dc3d1d0d",
-    playbackId: "46eeduidcicwywxy",
-    playbackUrl: "https://livepeercdn.studio/hls/46eeduidcicwywxy/index.m3u8",
-  };
 
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold">Live Concerts</h1>
       {loading ? (
-        <p className="font-light">Loading livestreams...</p>
+        <p className="font-light">Loading livestream...</p>
       ) : error ? (
         <p className="font-light text-red-500">{error}</p>
       ) : (
         <div>
-          {streams.map((stream) => (
-            <div key={stream.id} className="my-4">
-              <h2 className="text-xl">{stream.name}</h2>
+          {stream && (
+            <div className="my-4">
+              <h2 className="text-xl">Live Stream</h2>
               <iframe
                 src={`https://livepeercdn.com/hls/${stream.playbackId}/index.m3u8`}
                 width="100%"
                 height="400"
                 frameBorder="0"
                 allowFullScreen
-                title={stream.name}
+                title="Live Stream"
               />
             </div>
-          ))}
-          {/* Displaying the specific livestream details */}
-          <h2 className="text-xl mt-4">Current Livestream</h2>
-          <div className="my-4">
-            <p>Stream ID: {livestreamDetails.streamId}</p>
-            <p>Playback ID: {livestreamDetails.playbackId}</p>
-            <iframe
-              src={livestreamDetails.playbackUrl}
-              width="100%"
-              height="400"
-              frameBorder="0"
-              allowFullScreen
-              title="Current Livestream"
-            />
-          </div>
+          )}
         </div>
       )}
     </div>
   );
 };
 
-export default LiveConcerts;
+export default LiveConcerts
