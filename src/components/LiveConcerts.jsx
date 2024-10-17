@@ -9,7 +9,7 @@ const LiveConcerts = () => {
     const fetchStreamDetails = async () => {
       try {
         // Assuming you already have the Playback ID
-        const playbackId = 'YOUR_PLAYBACK_ID'; // Replace with your actual Playback ID
+        const playbackId = '46eeduidcicwywxy'; // Replace with your actual Playback ID
         setStream({ playbackId });
       } catch (err) {
         setError('Error fetching stream: ' + err.message);
