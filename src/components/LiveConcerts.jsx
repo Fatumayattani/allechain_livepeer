@@ -34,7 +34,7 @@ const LiveConcerts = () => {
             <div className="my-4">
               <h2 className="text-xl">Live Stream</h2>
               <iframe
-                src={`https://livepeercdn.com/hls/${stream.playbackId}/index.m3u8`}
+                src={`https://livepeercdn.com/hls/${stream.46eeduidcicwywxy}/index.m3u8`}
                 width="100%"
                 height="400"
                 frameBorder="0"
