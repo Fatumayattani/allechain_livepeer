@@ -15,7 +15,7 @@ const LiveConcerts = () => {
       preload: 'auto',
       sources: [
         {
-          src: `https://livepeercdn.com/hls/${playbackId}/index.m3u8`, // Constructed URL using Playback ID
+          src: `https://livepeercdn.studio/hls/${playbackId}/index.m3u8`, // Constructed URL using Playback ID
           type: 'application/x-mpegURL',
         },
       ],
