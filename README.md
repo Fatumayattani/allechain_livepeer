@@ -11,6 +11,7 @@
 - **NFTs** for exclusive content.
 - **Tokenized tipping system** to support artists directly.
 
+![Allechain feature](src/assets/allefirst.PNG)
 ---
 ### Target Audience:
 - **Independent artists** seeking visibility and fair compensation in Africa.
