@@ -86,7 +86,6 @@ To provide **independent creators** with a fair, secure, and engaging platform t
 - **Streaming Infrastructure:** Powered by **Livepeer** for decentralized, scalable livestreaming.  
 - **Blockchain:** Smart contracts on Ethereum manage transactions and ownership.  
 - **Wormhole:** For **cross-chain token transfers** and interoperability.  
-- **AI Tools:** To provide **personalized recommendations** and **automated content moderation**.
 
 ---
 
