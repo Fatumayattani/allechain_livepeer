@@ -15,6 +15,7 @@
 ---
 ## Main Product - Live Concerts
 Experience live concerts directly through the platform. Fans can attend virtual events and support their favorite artists by purchasing tickets and tokens. This feature aims to revolutionize how fans engage with live performances.
+![Allechain feature](src/assets/alletwo.PNG)
 
 ### Target Audience:
 - **Independent artists** seeking visibility and fair compensation in Africa.
