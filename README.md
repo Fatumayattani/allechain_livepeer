@@ -13,6 +13,9 @@
 
 ![Allechain feature](src/assets/allefirst.PNG)
 ---
+## Main Product - Live Concerts
+Experience live concerts directly through the platform. Fans can attend virtual events and support their favorite artists by purchasing tickets and tokens. This feature aims to revolutionize how fans engage with live performances.
+
 ### Target Audience:
 - **Independent artists** seeking visibility and fair compensation in Africa.
 - **Podcasters** looking for decentralized platforms with fewer restrictions.
