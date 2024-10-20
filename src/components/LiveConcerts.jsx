@@ -27,7 +27,7 @@ const LiveConcerts = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold">Live Concerts</h1>
+      <h1 className="text-2xl font-bold"></h1>
       {loading ? (
         <p className="font-light">Loading livestreams...</p>
       ) : error ? (
