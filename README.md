@@ -129,18 +129,21 @@ To provide **independent creators** with a fair, secure, and engaging platform t
 
 ### Phase 1: Project Initialization
 - **Setup Project Structure**
+### Phase 2: User Interface Development
+- **UI Design and Implementation**
 
-### Phase 2: Core Features Development
+### Phase 3: Core Features Development
+- **Live Streaming Integration for Concerts, Music, and Podcasts**  
+  (Main product that allows users to stream live concerts and podcasts)
 - **Token Support for Fans**
-- **Live Concerts Integration**
+- **Playlist Creation for Users**
 - **Wallet Integration**
 - **Smart Contract Development**
 
-### Phase 3: User Interface Development
-- **UI Design and Implementation**
-
 ### Phase 4: Livepeer Integration
 - **Video Streaming Setup**
+- **Wallet Integration**
+- **Smart Contract Development**
 
 ### Phase 5: User and Artist Onboarding
 - **Onboarding Process for Users and Artists**
