@@ -140,7 +140,7 @@ To provide **independent creators** with a fair, secure, and engaging platform t
 - **Wallet Integration**
 - **Smart Contract Development**
 
-### Phase 4: Livepeer Integration
+### Phase 4: Integration
 - **Video Streaming Setup**
 - **Wallet Integration**
 - **Smart Contract Development**
