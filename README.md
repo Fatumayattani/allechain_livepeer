@@ -84,8 +84,7 @@ To provide **independent creators** with a fair, secure, and engaging platform t
 - **Frontend:** Built with **React.js** for a dynamic user interface.  
 - **Styling:** Utilizes **Tailwind CSS** for responsive design.  
 - **Streaming Infrastructure:** Powered by **Livepeer** for decentralized, scalable livestreaming.  
-- **Blockchain:** Smart contracts on Ethereum manage transactions and ownership.  
-- **Wormhole:** For **cross-chain token transfers** and interoperability.  
+- **Blockchain:** Smart contracts on Ethereum manage transactions and ownership.
 
 ---
 
