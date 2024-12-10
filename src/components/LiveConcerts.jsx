@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { albumsData } from '../assets/assets';
 import AlbumItem from './AlbumItem';
-import { VITE_LIVEPEER_API_KEY } from '../.env'; // Access API key
 import SongItem from './SongItem';
 
 const LiveConcerts = () => {
