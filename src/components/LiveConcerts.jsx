@@ -54,7 +54,7 @@ const LiveConcerts = () => {
       {/* Button to Create a New Livestream */}
       <button
         onClick={createStream}
-        className="bg-blue-500 text-white px-4 py-2 rounded my-4"
+        className="bg-orange-400 text-white px-4 py-2 rounded my-4"
       >
         Create New Livestream
       </button>
@@ -70,7 +70,8 @@ const LiveConcerts = () => {
             <div key={stream.id} className="my-4">
               <h2 className="text-xl">{stream.name}</h2>
               <iframe
-                src={`https://lvpr.tv?v=${stream.playbackId}`} // Use playbackId
+                // Use Playback URL in iframe
+                src={`https://livepeercdn.studio/hls/${stream.playbackId}/index.m3u8`} // Correct Playback URL format
                 width="100%"
                 height="400"
                 frameBorder="0"
