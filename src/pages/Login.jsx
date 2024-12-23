@@ -149,7 +149,7 @@ const Login = () => {
 
             <button
               type="button"
-              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-white rounded-lg hover:bg-white hover:text-orange-600 transition-colors duration-200"
+              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-white rounded-lg hover:bg-white hover:text-black transition-colors duration-200"
             >
               <FaGoogle className="h-5 w-5" />
               <span>Continue with Google</span>
