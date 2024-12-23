@@ -131,7 +131,7 @@ const Login = () => {
       </div>
 
       {/* Right Side - Alternative Auth Methods */}
-      <div className="w-1/2 bg-gradient-to-br from-yellow-500 to-red-600 p-8 flex flex-col justify-center items-center text-white">
+      <div className="w-1/2 bg-gradient-to-br from-yellow-500 to-orange-600 p-8 flex flex-col justify-center items-center text-white">
         <div className="max-w-md w-full space-y-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Quick Access</h2>
@@ -141,7 +141,7 @@ const Login = () => {
           <div className="space-y-4">
             <button
               type="button"
-              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-white rounded-lg hover:bg-white hover:text-indigo-600 transition-colors duration-200"
+              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-white rounded-lg hover:bg-white hover:text-black transition-colors duration-200"
             >
               <Wallet className="h-5 w-5" />
               <span>Connect Wallet</span>
@@ -149,7 +149,7 @@ const Login = () => {
 
             <button
               type="button"
-              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-white rounded-lg hover:bg-white hover:text-indigo-600 transition-colors duration-200"
+              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-white rounded-lg hover:bg-white hover:text-orange-600 transition-colors duration-200"
             >
               <FaGoogle className="h-5 w-5" />
               <span>Continue with Google</span>
