@@ -101,7 +101,7 @@ const Login = () => {
                       required
                       value={formData.confirmPassword}
                       onChange={handleInputChange}
-                      className="pl-10 w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="pl-10 w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                       placeholder="Confirm Password"
                     />
                   </div>
@@ -113,7 +113,7 @@ const Login = () => {
               <div className="flex items-center justify-end">
                 <button
                   type="button"
-                  className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
+                  className="text-sm font-medium text-orange-600 hover:text-orange-500"
                 >
                   Forgot your password?
                 </button>
@@ -131,7 +131,7 @@ const Login = () => {
       </div>
 
       {/* Right Side - Alternative Auth Methods */}
-      <div className="w-1/2 bg-gradient-to-br from-indigo-500 to-purple-600 p-8 flex flex-col justify-center items-center text-white">
+      <div className="w-1/2 bg-gradient-to-br from-orange-500 to-orange-600 p-8 flex flex-col justify-center items-center text-white">
         <div className="max-w-md w-full space-y-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Quick Access</h2>
