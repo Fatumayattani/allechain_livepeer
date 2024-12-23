@@ -131,7 +131,7 @@ const Login = () => {
       </div>
 
       {/* Right Side - Alternative Auth Methods */}
-      <div className="w-1/2 bg-gradient-to-br from-orange-500 to-orange-600 p-8 flex flex-col justify-center items-center text-white">
+      <div className="w-1/2 bg-gradient-to-br from-yellow-500 to-red-600 p-8 flex flex-col justify-center items-center text-white">
         <div className="max-w-md w-full space-y-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Quick Access</h2>
