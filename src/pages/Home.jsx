@@ -29,7 +29,7 @@ const Navbar = () => {
                 onClick={() => navigate('/login')}
                 className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors"
               >
-                Get Started
+                Join Community
               </button>
             </div>
           </div>
