@@ -39,31 +39,35 @@ const Navbar = () => {
   );
 };
 
-const Hero = () => (
-  <div className="relative min-h-screen bg-gradient-to-br from-black via-orange-900 to-black">
-    <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&q=80')] opacity-20 bg-cover bg-center" />
-    <div className="relative max-w-7xl mx-auto pt-32 pb-16 px-4 sm:px-6 lg:px-8 text-center">
-      <div className="space-y-8">
-        <h1 className="text-5xl md:text-7xl font-bold text-white">
-          Stream Without Limits
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-          The next generation decentralized streaming platform powered by Livepeer technology.
-          Built for creators, by creators.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="flex items-center px-8 py-4 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors">
-            <Play className="w-5 h-5 mr-2" />
-            Start Streaming
-          </button>
-          <button className="px-8 py-4 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-colors">
-            Learn More
-          </button>
+const Hero = () => {
+  const navigate = useNavigate();
+
+  return (
+    <div className="relative min-h-screen bg-gradient-to-br from-black via-orange-900 to-black">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&q=80')] opacity-20 bg-cover bg-center" />
+      <div className="relative max-w-7xl mx-auto pt-32 pb-16 px-4 sm:px-6 lg:px-8 text-center">
+        <div className="space-y-8">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mt-20">
+            Stream Without Limits
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+            The next generation decentralized streaming platform powered by Livepeer technology.
+            Built for creators, by creators.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button
+              onClick={() => navigate('/login')}
+              className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors"
+            >
+              Get Started
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
+
 
 const Features = () => {
   const features = [
