@@ -1,92 +1,87 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { albumsData } from '../assets/assets';
-import AlbumItem from './AlbumItem';
-import SongItem from './SongItem';
+import React, { useState } from "react";
+import ReactPlayer from "react-player"; // For playing livestreams
+import { albumsData } from "../assets/assets";
+import AlbumItem from "./AlbumItem";
 
 const LiveConcerts = () => {
-  const [streams, setStreams] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [newStream, setNewStream] = useState(null);
+  // Livestream state (initial hardcoded streams)
+  const [streams, setStreams] = useState([
+    {
+      id: 1,
+      name: "Live Concert A",
+      playbackId: "7462cm47zafd3mwi", // Replace with actual playbackId
+    },
+    {
+      id: 2,
+      name: "Live Concert B",
+      playbackId: "anotherPlaybackId", // Replace with actual playbackId
+    },
+  ]);
 
-  const apiKey = import.meta.env.VITE_LIVEPEER_API_KEY;
-
-  // Fetch existing streams on component load
-  useEffect(() => {
-    const fetchStreams = async () => {
-      try {
-        const response = await axios.get('https://livepeer.studio/api/stream', {
-          headers: { Authorization: `Bearer ${apiKey}` },
-        });
-        setStreams(response.data);
-        setLoading(false);
-      } catch (err) {
-        console.error(err);
-        setError('Failed to load livestreams.');
-        setLoading(false);
-      }
+  // Function to simulate starting a new livestream
+  const startNewStream = () => {
+    const newStream = {
+      id: streams.length + 1,
+      name: `New Live Concert ${streams.length + 1}`,
+      playbackId: `simulatedPlaybackId${streams.length + 1}`, // Simulated playbackId
     };
 
-    fetchStreams();
-  }, [apiKey]);
-
-  // Create a new livestream
-  const createStream = async () => {
-    try {
-      const response = await axios.post(
-        'https://livepeer.studio/api/stream',
-        { name: 'New Live Concert Stream', record: true },
-        { headers: { Authorization: `Bearer ${apiKey}` } }
-      );
-      setNewStream(response.data);
-      alert('Stream created! Stream ID: ' + response.data.id);
-    } catch (err) {
-      console.error(err);
-      setError('Failed to create stream.');
-    }
+    setStreams((prevStreams) => [...prevStreams, newStream]); // Add new stream
+    alert(`New Livestream Started: ${newStream.name}`);
   };
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold">Live Concerts</h1>
+    <div className="p-6 bg-gray-100 min-h-screen">
+      {/* Page Title */}
+      <h1 className="text-3xl font-bold mb-6 text-gray-800">Live Concerts</h1>
 
-      {/* Button to Create a New Livestream */}
+      {/* Start New Livestream Button */}
       <button
-        onClick={createStream}
-        className="bg-orange-400 text-white px-4 py-2 rounded my-4"
+        onClick={startNewStream}
+        className="bg-orange-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-orange-600 transition duration-200 mb-8"
       >
-        Create New Livestream
+        Start New Livestream
       </button>
 
       {/* Livestreams Section */}
-      {loading ? (
-        <p className="font-light">Loading livestreams...</p>
-      ) : error ? (
-        <p className="font-light text-red-500">{error}</p>
-      ) : (
-        <div>
-          {streams.map((stream) => (
-            <div key={stream.id} className="my-4">
-              <h2 className="text-xl">{stream.name}</h2>
-              <iframe
-                // Use Playback URL in iframe
-                src={`https://livepeercdn.studio/hls/${stream.playbackId}/index.m3u8`} // Correct Playback URL format
-                width="100%"
-                height="400"
-                frameBorder="0"
-                allowFullScreen
-                title={stream.name}
-              />
-            </div>
-          ))}
-        </div>
-      )}
+      <div className="space-y-8">
+        {streams.map((stream) => (
+          <div
+            key={stream.id}
+            className="bg-white p-6 rounded-lg shadow-md border border-gray-200"
+          >
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              {stream.name}
+            </h2>
+
+            {/* Livestream Player */}
+            <ReactPlayer
+              url={`https://livepeercdn.studio/hls/${stream.playbackId}/index.m3u8`}
+              controls
+              width="80%"
+              height="360px"
+              className="rounded-lg overflow-hidden"
+            />
+
+            {/* Broadcast Link */}
+            <a
+              href={`https://lvpr.tv/broadcast/${stream.playbackId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block text-blue-500 hover:underline"
+            >
+              Watch Broadcast
+            </a>
+          </div>
+        ))}
+      </div>
 
       {/* Concerts List */}
-      <div className="mb-4">
-        <h1 className="my-5 font-bold text-2xl">Previous Concerts</h1>
-        <div className="flex overflow-auto">
+      <div className="my-12">
+        <h1 className="text-2xl font-bold mb-6 text-gray-800">
+          Previous Concerts
+        </h1>
+        <div className="flex space-x-4 overflow-auto">
           {albumsData.map((item, index) => (
             <AlbumItem
               key={index}
@@ -103,3 +98,4 @@ const LiveConcerts = () => {
 };
 
 export default LiveConcerts;
+

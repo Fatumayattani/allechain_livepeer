@@ -11,5 +11,16 @@ export default defineConfig({
   define: {
     'process.env': process.env, // Optional, if using in SSR mode
   },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://livepeer.studio',
+        changeOrigin: true,
+        secure: false, // Set to true if the API server supports HTTPS
+        rewrite: (path) => path.replace(/^\/api/, ''), // Rewrite the API request path
+      },
+    },
+  },
 });
+
 

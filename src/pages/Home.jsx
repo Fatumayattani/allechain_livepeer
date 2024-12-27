@@ -22,9 +22,9 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
-              <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
-              <a href="#creators" className="text-gray-300 hover:text-white transition-colors">Creators</a>
-              <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
+              <a href="#features" className="text-gray-300 hover:text-white transition-colors">About</a>
+              <a href="#creators" className="text-gray-300 hover:text-white transition-colors">Nfts</a>
+              <a href="#about" className="text-gray-300 hover:text-white transition-colors">Blog</a>
               <button
                 onClick={() => navigate('/login')}
                 className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors"

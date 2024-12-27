@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
-import { Wallet, Mail, LogIn, Lock, Eye, EyeOff } from 'lucide-react'
-import { useNavigate } from 'react-router-dom'
-import { FaGoogle } from 'react-icons/fa'
+import React, { useState } from "react";
+import { Wallet, Mail, LogIn, Lock, Eye, EyeOff } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { FaGoogle } from "react-icons/fa";
+import { ConnectWallet } from "@thirdweb-dev/react"; // Import Thirdweb's ConnectButton
+
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-    confirmPassword: '',
+    email: "",
+    password: "",
+    confirmPassword: "",
   });
 
   const navigate = useNavigate(); // Initialize navigate function
@@ -16,10 +18,10 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
 
     // Redirect to the /player page after form submission
-    navigate('/player');
+    navigate("/player");
   };
 
   const handleInputChange = (e) => {
@@ -37,7 +39,7 @@ const Login = () => {
         <div className="max-w-md w-full mx-auto space-y-8">
           <div className="text-center">
             <h2 className="mt-6 text-3xl font-bold text-gray-900">
-              {isLogin ? 'Welcome back' : 'Create an account'}
+              {isLogin ? "Welcome back" : "Create an account"}
             </h2>
             <p className="mt-2 text-sm text-gray-600">
               {isLogin ? "Don't have an account? " : "Already have an account? "}
@@ -45,7 +47,7 @@ const Login = () => {
                 onClick={() => setIsLogin(!isLogin)}
                 className="font-medium text-orange-600 hover:text-orange-500"
               >
-                {isLogin ? 'Sign up' : 'Sign in'}
+                {isLogin ? "Sign up" : "Sign in"}
               </button>
             </p>
           </div>
@@ -124,7 +126,7 @@ const Login = () => {
               type="submit"
               className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              {isLogin ? 'Sign in' : 'Create Account'}
+              {isLogin ? "Sign in" : "Create Account"}
             </button>
           </form>
         </div>
@@ -135,17 +137,18 @@ const Login = () => {
         <div className="max-w-md w-full space-y-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Quick Access</h2>
-            <p className="mt-2 text-gray-200">Connect instantly with your preferred method</p>
+            <p className="mt-2 text-gray-200">
+              Connect instantly with your preferred method
+            </p>
           </div>
 
           <div className="space-y-4">
-            <button
-              type="button"
+            <ConnectWallet
               className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-white rounded-lg hover:bg-white hover:text-black transition-colors duration-200"
             >
               <Wallet className="h-5 w-5" />
               <span>Connect Wallet</span>
-            </button>
+            </ConnectWallet>
 
             <button
               type="button"
@@ -161,4 +164,5 @@ const Login = () => {
   );
 };
 
-export default Login
+export default Login;
+
