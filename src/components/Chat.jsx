@@ -61,12 +61,12 @@ function Chat() {
                 value={newMessage}
                 onChange={(e) => setNewMessage(e.target.value)}
                 placeholder="Type a message..."
-                className="flex-1 px-4 py-2 rounded-full border focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="flex-1 px-4 py-2 rounded-full border focus:outline-none focus:ring-2 focus:ring-gray-500"
               />
               <IconButton
                 icon={Send}
                 onClick={handleSendMessage}
-                className="text-white bg-blue-500 hover:bg-blue-600"
+                className="text-white bg-orange-500 hover:bg-orange-600"
                 title="Send message"
               />
             </div>
