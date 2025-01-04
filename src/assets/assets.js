@@ -4,6 +4,8 @@ import like_icon from './like.png'
 import loop_icon from './loop.png'
 import mic_icon from './mic.png'
 import next_icon from './next.png'
+import login_icon from './login.png'
+import nft_icon from './nft.png'
 import play_icon from './play.png'
 import pause_icon from './pause.png'
 import plays_icon from './plays.png'
@@ -41,6 +43,13 @@ import img16 from './img16.jpg'
 import song1 from  './song1.mp3'
 import song2 from  './song2.mp3'
 import song3 from  './song3.mp3'
+import musicnft1 from  './musicnft1.png'
+import musicnft2 from './musicnft2.png'
+import musicnft3 from './musicnft3.png'
+import musicnft4 from './musicnft4.png'
+import musicnft5 from './musicnft5.png'
+import musicnft6 from './musicnft6.png'
+
 
 export const assets = {
     bell_icon,
@@ -67,6 +76,8 @@ export const assets = {
     arrow_right,
     clock_icon,
     ac_logo,
+    nft_icon,
+    login_icon
 }
 
 export const albumsData = [
@@ -181,3 +192,48 @@ export const songsData = [
         duration: "2:35"
     }
 ]
+
+export const nftData = [
+    {
+      id: 1,
+      name: "Midnight Lights",
+      desc: "A one-of-a-kind music poster NFT with exclusive artwork.",
+      image: musicnft1,
+      price: "0.5 ETH",
+    },
+    {
+      id: 2,
+      name: "Neon Waves",
+      desc: "A limited edition poster of a chart-topping single.",
+      image: musicnft2,
+      price: "0.75 ETH",
+    },
+    {
+      id: 3,
+      name: "Soundwaves in Space",
+      desc: "An NFT featuring a rare design for an underground music track.",
+      image: musicnft3,
+      price: "1.0 ETH",
+    },
+    {
+      id: 4,
+      name: "Electric Soul",
+      desc: "A collectible poster from a legendary music concert.",
+      image: musicnft4,
+      price: "1.2 ETH",
+    },
+    {
+      id: 5,
+      name: "Mystic Beats",
+      desc: "A vibrant music poster NFT to celebrate the artist's latest album.",
+      image: musicnft5,
+      price: "0.6 ETH",
+    },
+    {
+      id: 6,
+      name: "Retro Future",
+      desc: "A futuristic design to represent the future of music.",
+      image: musicnft6,
+      price: "0.8 ETH",
+    },
+  ]

@@ -9,8 +9,8 @@ import { PlayerContext } from "./context/PlayerContext";
 import { ConnectWallet } from "@thirdweb-dev/react";
 import { client } from "./client";
 import LiveConcerts from "./components/LiveConcerts";  // Import the LiveConcerts component
-import Podcast from "./components/Podcast";  // Import the Podcast component
-import Music from "./components/Music";  // Import the Music component
+import Music from "./components/Music";
+import Podcast from "./components/Podcast";
 
 const App = () => {
   const { audioRef } = useContext(PlayerContext);
@@ -49,14 +49,9 @@ const App = () => {
             </div>
           }
         />
-
-        {/* Routes for Music, Podcast, and Live Concerts */}
+        <Route path="/live-concerts" element={<LiveConcerts />} />
         <Route path="/music" element={<Music />} />
         <Route path="/podcast" element={<Podcast />} />
-        <Route path="/live-concerts" element={<LiveConcerts />} />
-
-        {/* Redirect unknown routes to Home */}
-        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>
   );

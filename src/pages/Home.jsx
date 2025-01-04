@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Play, Radio, Shield, Zap, Users, Github, Twitter, Instagram } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { assets} from '../assets/assets'
 
 const images = [
   'https://replicate.delivery/pbxt/IJeRpXVvxMJe1XcaGHXTVXnEZBHrWiKEBDXiIF2CfEknnXHE/out-0.png',
@@ -16,10 +17,10 @@ const Navbar = () => {
     <nav className="fixed w-full bg-black/90 backdrop-blur-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <Play className="w-8 h-8 text-orange-500" />
-            <span className="ml-2 text-xl font-bold text-white">AlleChain</span>
-          </div>
+        <div className="flex items-center">
+        <img className='w-8' src={assets.search_icon} alt="" />
+        <span className="ml-2 text-xl font-bold text-white">AlleChain</span>
+         </div>
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
               <a href="#features" className="text-gray-300 hover:text-white transition-colors">About</a>
@@ -27,7 +28,7 @@ const Navbar = () => {
               <a href="#about" className="text-gray-300 hover:text-white transition-colors">Blog</a>
               <button
                 onClick={() => navigate('/login')}
-                className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors"
+                className="bg-orange-500 text-white px-4 py-2 rounded-lg"
               >
                 Join Community
               </button>
@@ -43,21 +44,20 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-black via-orange-900 to-black">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&q=80')] opacity-20 bg-cover bg-center" />
+    <div className="relative min-h-screen">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1684679106461-dae134df8da6?auto=format&fit=crop&q=80')] bg-cover bg-center" />
       <div className="relative max-w-7xl mx-auto pt-32 pb-16 px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-8">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mt-20">
-            Stream Without Limits
+          <h1 className="text-3xl md:text-7xl font-bold text-white mt-40">
+          Your Hub for Music, Podcasts, Live Events and NFTs
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            The next generation decentralized streaming platform powered by Livepeer technology.
-            Built for creators, by creators.
+          AlleChain empowers independent creators with decentralized livestreaming, fair compensation, and direct fan engagement.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => navigate('/login')}
-              className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors"
+              className="bg-orange-500 text-white px-4 py-2 rounded-lg"
             >
               Get Started
             </button>
@@ -67,7 +67,6 @@ const Hero = () => {
     </div>
   );
 };
-
 
 const Features = () => {
   const features = [

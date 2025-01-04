@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { Wallet, Mail, LogIn, Lock, Eye, EyeOff } from "lucide-react";
-import { useNavigate } from "react-router-dom";
-import { FaGoogle } from "react-icons/fa";
-import { ConnectWallet } from "@thirdweb-dev/react"; // Import Thirdweb's ConnectButton
+import React, { useState } from "react"
+import { Wallet, Mail, LogIn, Lock, Eye, EyeOff } from "lucide-react"
+import { useNavigate } from "react-router-dom"
+import { FaGoogle } from "react-icons/fa"
+import { ConnectWallet } from "@thirdweb-dev/react"
+import { assets} from '../assets/assets'
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -129,22 +130,18 @@ const Login = () => {
               {isLogin ? "Sign in" : "Create Account"}
             </button>
           </form>
-        </div>
-      </div>
 
-      {/* Right Side - Alternative Auth Methods */}
-      <div className="w-1/2 bg-gradient-to-br from-orange-500 to-black p-8 flex flex-col justify-center items-center text-white">
-        <div className="max-w-md w-full space-y-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold">Quick Access</h2>
-            <p className="mt-2 text-gray-200">
-              Connect instantly with your preferred method
-            </p>
+          {/* Divider */}
+          <div className="flex items-center justify-center my-4">
+            <div className="w-full border-t border-gray-300"></div>
+            <span className="mx-4 text-gray-500">Or</span>
+            <div className="w-full border-t border-gray-300"></div>
           </div>
 
-          <div className="space-y-4">
+          {/* Connect Wallet and Continue with Google */}
+          <div className="flex flex-col space-y-4 w-full">
             <ConnectWallet
-              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-white rounded-lg hover:bg-white hover:text-black transition-colors duration-200"
+              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-orange-500 rounded-lg hover:bg-orange-500 hover:text-black transition-colors duration-200"
             >
               <Wallet className="h-5 w-5" />
               <span>Connect Wallet</span>
@@ -152,7 +149,7 @@ const Login = () => {
 
             <button
               type="button"
-              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-white rounded-lg hover:bg-white hover:text-black transition-colors duration-200"
+              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-orange-500 rounded-lg hover:bg-orange-500 hover:text-black transition-colors duration-200"
             >
               <FaGoogle className="h-5 w-5" />
               <span>Continue with Google</span>
@@ -160,9 +157,17 @@ const Login = () => {
           </div>
         </div>
       </div>
+
+      {/* Right Side - Image */}
+      <div className="w-3/4 p-8 flex justify-center items-center bg-white">
+        <img
+          src={assets.nft_icon}
+          alt="Login Image"
+          className="max-w-full h-auto"
+        />
+      </div>
     </div>
   );
 };
 
-export default Login;
-
+export default Login

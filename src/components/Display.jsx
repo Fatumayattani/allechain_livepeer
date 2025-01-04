@@ -4,6 +4,8 @@ import DisplayHome from './DisplayHome'
 import DisplayAlbum from './DisplayAlbum'
 import { albumsData } from '../assets/assets'
 import LiveConcerts from './LiveConcerts';
+import Music from './Music'
+import Podcast from './Podcast'
 
 
 const Display = () => {
@@ -29,6 +31,8 @@ const Display = () => {
         <Route path='/' element={<DisplayHome/>} />
         <Route path='/album/:id' element={<DisplayAlbum/>} />
         <Route path='/live-concerts' element={<LiveConcerts />} />
+        <Route path='/podcast' element={<Music />} />
+        <Route path='/music' element={<Podcast />} />
         Route
         </Routes> 
       

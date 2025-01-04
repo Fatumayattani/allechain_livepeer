@@ -79,7 +79,7 @@ const LiveConcerts = () => {
       {/* Concerts List */}
       <div className="my-12">
         <h1 className="text-2xl font-bold mb-6 text-gray-800">
-          Previous Concerts
+          Upcoming Concerts
         </h1>
         <div className="flex space-x-4 overflow-auto">
           {albumsData.map((item, index) => (
