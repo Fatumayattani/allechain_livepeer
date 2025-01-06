@@ -110,7 +110,7 @@ const Music = () => {
       {/* Right Side with Albums and Music NFTs Sections */}
       <div className="w-4/5 p-8">
         {/* Albums Section */}
-        <div className="my-6">
+        <div className="my-4">
           <h2 className="text-3xl font-bold mb-6 text-white">Latest Music</h2>
           <div className="flex space-x-4 overflow-auto">
             {albumsData.map((item, index) => (
