@@ -26,28 +26,31 @@ const Podcast = () => {
   return (
     <div className="flex min-h-screen bg-gray-900 text-white">
       {/* Left Side with a Separator */}
-      <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center mt-4">
-        <h2 className="text-xl font-bold mb-4">Now Playing</h2>
+      <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center">
+        <h2 className="text-xl font-bold mb-4 text-center text-orange-500">Podcast Player</h2>
 
-        {/* Audio Player Controls */}
-        <audio ref={audioRef} className="w-full mb-6" controls>
-          <source src="/pod.wav" type="audio/wav" />
-          Your browser does not support the audio element.
-        </audio>
+        {/* Audio Player Container */}
+        <div className="w-full bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
+          {/* Audio Player Controls */}
+          <audio ref={audioRef} className="w-full rounded-md mb-4" controls>
+            <source src="/pod.wav" type="audio/wav" />
+            Your browser does not support the audio element.
+          </audio>
 
-        <div className="flex space-x-4">
-          <button
-            className="bg-gray-700 p-2 rounded-full hover:bg-gray-600"
-            onClick={handlePlayPause}
-          >
-            {isPlaying ? 'Pause' : 'Play'}
-          </button>
-          <button
-            className="bg-gray-700 p-2 rounded-full hover:bg-gray-600"
-            onClick={handleStop}
-          >
-            Stop
-          </button>
+          <div className="flex space-x-6">
+            <button
+              className="bg-orange-500 text-white p-3 rounded-full hover:bg-orange-400 transition duration-300"
+              onClick={handlePlayPause}
+            >
+              {isPlaying ? 'Pause' : 'Play'}
+            </button>
+            <button
+              className="bg-red-500 text-white p-3 rounded-full hover:bg-red-400 transition duration-300"
+              onClick={handleStop}
+            >
+              Stop
+            </button>
+          </div>
         </div>
       </div>
 
@@ -55,16 +58,17 @@ const Podcast = () => {
       <div className="w-4/5 p-8">
         {/* Music NFTs Section */}
         <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Latest Podcast</h2>
+          <h1 className="text-3xl font-bold mb-6 text-white">Podcast Page</h1>
+          <h2 className="text-2xl font-semibold mb-6 text-white">Latest Podcast</h2>
           <div className="flex space-x-4 overflow-auto">
             {nftData.map((item, index) => (
-              <div key={index} className="bg-gray-800 p-4 rounded-lg">
+              <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-lg">
                 <img
                   src={item.image}
                   alt={item.name}
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
-                <h2 className="text-sm font-semibold mb-2">{item.name}</h2>
+                <h2 className="text-sm font-semibold mb-2 text-white">{item.name}</h2>
               </div>
             ))}
           </div>
@@ -72,7 +76,7 @@ const Podcast = () => {
 
         {/* Podcast Section */}
         <div>
-          <h2 className="text-2xl font-semibold mb-6">Previous Podcasts</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-white">Previous Podcasts</h2>
           <div className="flex space-x-4 overflow-auto">
             {albumsData.map((item, index) => (
               <AlbumItem
@@ -91,3 +95,4 @@ const Podcast = () => {
 };
 
 export default Podcast
+
