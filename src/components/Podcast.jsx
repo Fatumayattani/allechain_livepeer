@@ -83,7 +83,7 @@ const Podcast = () => {
                 vote === 'Useful' ? 'bg-orange-500' : 'bg-gray-700'
               } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
             >
-              Very useful in daily tasks
+            Very Useful
             </button>
             <button
               onClick={() => handleVote('Scary')}
