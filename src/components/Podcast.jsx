@@ -99,7 +99,7 @@ const Podcast = () => {
                 vote === 'Uncertain' ? 'bg-orange-500' : 'bg-gray-700'
               } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
             >
-              Not sure, it has pros and cons
+            Needs Clarity
             </button>
             {vote && (
               <p className="mt-4 text-center text-white">
