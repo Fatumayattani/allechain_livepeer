@@ -66,7 +66,7 @@ const Podcast = () => {
         </div>
 
         {/* Poll Section */}
-        <div className="mt-8 w-full bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div className="mt-12 w-full bg-gray-800 p-6 rounded-lg shadow-lg">
           <h3 className="text-xl font-bold text-center text-orange-500 mb-4">Poll: What do you think about AI in Podcasts?</h3>
           <div className="flex flex-col space-y-4">
             <button
