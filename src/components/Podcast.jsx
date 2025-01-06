@@ -67,7 +67,7 @@ const Podcast = () => {
 
         {/* Poll Section */}
         <div className="mt-16 w-full bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h3 className="text-xl font-bold text-center text-orange-500 mb-4">Poll: What do you think about AI in Podcasts?</h3>
+          <h3 className="text-xl font-bold text-center text-orange-500 mb-4">Poll: What do you think about AI?</h3>
           <div className="flex flex-col space-y-4">
             <button
               onClick={() => handleVote('Yes')}
