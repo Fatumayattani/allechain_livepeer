@@ -27,19 +27,24 @@ const Podcast = () => {
     <div className="flex min-h-screen bg-gray-900 text-white">
       {/* Left Side with a Separator */}
       <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center">
-        <h2 className="text-xl font-bold mb-4 text-center text-orange-500">Podcast Player</h2>
+        <h2 className="text-xl font-bold mb-4 text-center text-orange-500">Now Playing</h2>
 
-        {/* Audio Player Container */}
+        {/* Custom Audio Player */}
         <div className="w-full bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
-          {/* Audio Player Controls */}
-          <audio ref={audioRef} className="w-full rounded-md mb-4" controls>
-            <source src="/pod.wav" type="audio/wav" />
-            Your browser does not support the audio element.
-          </audio>
+          {/* Audio Element */}
+          <div className="w-full">
+            <audio ref={audioRef} className="w-full rounded-md mb-4" controls>
+              <source src="/pod.wav" type="audio/wav" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
 
+          {/* Custom Play/Pause and Stop Buttons */}
           <div className="flex space-x-6">
             <button
-              className="bg-orange-500 text-white p-3 rounded-full hover:bg-orange-400 transition duration-300"
+              className={`${
+                isPlaying ? 'bg-orange-500' : 'bg-gray-700'
+              } text-white p-3 rounded-full hover:bg-orange-400 transition duration-300`}
               onClick={handlePlayPause}
             >
               {isPlaying ? 'Pause' : 'Play'}
@@ -95,4 +100,3 @@ const Podcast = () => {
 };
 
 export default Podcast
-
