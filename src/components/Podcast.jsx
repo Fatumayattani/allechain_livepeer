@@ -1,7 +1,6 @@
-import React, { useState, useRef } from 'react';
-import { albumsData } from '../assets/assets';
-import AlbumItem from './AlbumItem';
-import { nftData } from '../assets/assets';
+import React, { useState, useRef } from 'react'
+import { nftData, podData } from '../assets/assets'
+import AlbumItem from './AlbumItem'
 
 const Podcast = () => {
   const audioRef = useRef(null); // Reference to the audio element
@@ -75,7 +74,7 @@ const Podcast = () => {
                 vote === 'Exciting' ? 'bg-orange-500' : 'bg-gray-700'
               } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
             >
-            Exciting Potential
+              Exciting Potential
             </button>
             <button
               onClick={() => handleVote('Useful')}
@@ -83,7 +82,7 @@ const Podcast = () => {
                 vote === 'Useful' ? 'bg-orange-500' : 'bg-gray-700'
               } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
             >
-            Very Useful
+              Very Useful
             </button>
             <button
               onClick={() => handleVote('Scary')}
@@ -91,7 +90,7 @@ const Podcast = () => {
                 vote === 'Scary' ? 'bg-orange-500' : 'bg-gray-700'
               } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
             >
-            Scary Unpredictable
+              Scary Unpredictable
             </button>
             <button
               onClick={() => handleVote('Uncertain')}
@@ -99,7 +98,7 @@ const Podcast = () => {
                 vote === 'Uncertain' ? 'bg-orange-500' : 'bg-gray-700'
               } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
             >
-            Needs Clarity
+              Needs Clarity
             </button>
             {vote && (
               <p className="mt-4 text-center text-white">
@@ -133,11 +132,10 @@ const Podcast = () => {
         <div>
           <h2 className="text-2xl font-semibold mb-6 text-white">Previous Podcasts</h2>
           <div className="flex space-x-4 overflow-auto">
-            {albumsData.map((item, index) => (
+            {podData.map((item, index) => (
               <AlbumItem
                 key={index}
                 name={item.name}
-                desc={item.desc}
                 id={item.id}
                 image={item.image}
               />
@@ -149,6 +147,7 @@ const Podcast = () => {
   );
 };
 
-export default Podcast;
+export default Podcast
+
 
 
