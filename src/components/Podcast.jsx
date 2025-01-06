@@ -36,7 +36,6 @@ const Podcast = () => {
         <h2 className="text-xl font-bold mb-4 text-center text-orange-500">Now Playing</h2>
 
         {/* Custom Audio Player */}
-        <h3 className="text-2xl font-semibold mb-4 text-center text-white">AI meets Livepeer</h3>
         <div className="w-full bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
           {/* Audio Element */}
           <div className="w-full">
@@ -47,6 +46,7 @@ const Podcast = () => {
           </div>
 
           {/* Custom Play/Pause and Stop Buttons */}
+          <h3 className="text-sm font-bold mb-4 text-center text-white">AI meets Livepeer</h3>
           <div className="flex space-x-6">
             <button
               className={`${
@@ -66,7 +66,7 @@ const Podcast = () => {
         </div>
 
         {/* Poll Section */}
-        <div className="mt-8 w-full bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div className="mt-8 w-full bg-gray-800 p-6 rounded-lg shadow-lg mt-6">
           <h3 className="text-xl font-bold text-center text-orange-500 mb-4">Poll: What do you think about AI in Podcasts?</h3>
           <div className="flex flex-col space-y-4">
             <button
