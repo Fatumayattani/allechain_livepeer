@@ -91,7 +91,7 @@ const Podcast = () => {
                 vote === 'Scary' ? 'bg-orange-500' : 'bg-gray-700'
               } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
             >
-              Scary and unpredictable
+            Scary Unpredictable
             </button>
             <button
               onClick={() => handleVote('Uncertain')}
