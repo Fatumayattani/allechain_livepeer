@@ -57,7 +57,7 @@ const Podcast = () => {
               {isPlaying ? 'Pause' : 'Play'}
             </button>
             <button
-              className="bg-red-500 text-white p-3 rounded-full hover:bg-red-400 transition duration-300"
+              className="bg-orange-500 text-white p-3 rounded-full hover:bg-orange-400 transition duration-300"
               onClick={handleStop}
             >
               Stop
