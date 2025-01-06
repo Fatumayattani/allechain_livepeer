@@ -26,11 +26,11 @@ const Podcast = () => {
   return (
     <div className="flex min-h-screen bg-gray-900 text-white">
       {/* Left Side with a Separator */}
-      <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center">
+      <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center mt-4">
         <h2 className="text-xl font-bold mb-4">Now Playing</h2>
 
         {/* Audio Player Controls */}
-        <audio ref={audioRef} className="w-full mb-4" controls>
+        <audio ref={audioRef} className="w-full mb-6" controls>
           <source src="/pod.wav" type="audio/wav" />
           Your browser does not support the audio element.
         </audio>
@@ -55,7 +55,6 @@ const Podcast = () => {
       <div className="w-4/5 p-8">
         {/* Music NFTs Section */}
         <div className="mb-12">
-          <h1 className="text-3xl font-bold mb-6">Podcast Page</h1>
           <h2 className="text-2xl font-semibold mb-6">Latest Podcast</h2>
           <div className="flex space-x-4 overflow-auto">
             {nftData.map((item, index) => (
