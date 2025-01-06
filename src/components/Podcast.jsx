@@ -36,6 +36,7 @@ const Podcast = () => {
         <h2 className="text-xl font-bold mb-4 text-center text-orange-500">Now Playing</h2>
 
         {/* Custom Audio Player */}
+        <h3 className="text-2xl font-semibold mb-4 text-center text-white">AI meets Livepeer</h3>
         <div className="w-full bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
           {/* Audio Element */}
           <div className="w-full">
