@@ -49,6 +49,12 @@ import musicnft3 from './musicnft3.png'
 import musicnft4 from './musicnft4.png'
 import musicnft5 from './musicnft5.png'
 import musicnft6 from './musicnft6.png'
+import pod1 from './pod1.png'
+import pod2 from './pod2.png'
+import pod3 from './pod3.png'
+import pod4 from './pod4.png'
+import pod5 from './pod5.png'
+import pod6 from './pod6.png'
 
 
 export const assets = {
@@ -237,3 +243,37 @@ export const nftData = [
       price: "0.8 ETH",
     },
   ]
+
+  export const podData = [
+    {
+      id: 1,
+      name: "The Creative Mind",
+      image: pod1,
+    },
+    {
+      id: 2,
+      name: "Tech Trends Today",
+      image: pod2,
+    },
+    {
+      id: 3,
+      name: "Health & Wellness Talks",
+      image: pod3,
+    },
+    {
+      id: 4,
+      name: "Entrepreneurial Journey",
+      image: pod4,
+    },
+    {
+      id: 5,
+      name: "Exploring the Cosmos",
+      image: pod5,
+    },
+    {
+      id: 6,
+      name: "The History Chronicles",
+      image: pod6,
+    },
+  ]
+  
