@@ -14,7 +14,7 @@ const Podcast = () => {
         </div>
         <div className="text-gray-300 text-sm text-center mb-6">
           <p className="font-semibold text-white">Episode 42</p>
-          <p>The Art of Podcasting</p>
+          <p>AI Meets Livepeer</p>
         </div>
         {/* Sound Wave Visualizer */}
         <div className="flex space-x-1">
