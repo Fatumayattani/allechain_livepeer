@@ -32,7 +32,7 @@ const Podcast = () => {
   return (
     <div className="flex min-h-screen bg-gray-900 text-white">
       {/* Left Side with a Separator */}
-      <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center mt-17">
+      <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center mt-19">
         <h2 className="text-xl font-bold mb-4 text-center text-orange-500">Now Playing</h2>
 
         {/* Custom Audio Player */}
