@@ -7,12 +7,12 @@ function LiveConcerts() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-7xl mt-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="col-span-3">
             <LivestreamPlayer streamUrl="https://example.com/stream" />
             <StreamInfo />
           </div>
-          <div className="col-span-1">
+          <div className="col-span-2">
             <Chat />
           </div>
         </div>
