@@ -110,9 +110,9 @@ const Music = () => {
       {/* Right Side with Albums and Music NFTs Sections */}
       <div className="w-4/5 p-8">
         {/* Albums Section */}
-        <div className="my-12 px-7">
+        <div className="my-6">
           <h2 className="text-3xl font-bold mb-6 text-white">Latest Music</h2>
-          <div className="flex space-x-4 overflow-auto px-7">
+          <div className="flex space-x-4 overflow-auto">
             {albumsData.map((item, index) => (
               <AlbumItem
                 key={index}
@@ -126,11 +126,11 @@ const Music = () => {
         </div>
 
         {/* Music NFTs Section */}
-        <div className="my-12 px-7">
+        <div className="my-12">
           <h2 className="text-3xl font-bold mb-6 text-white">Music NFTs</h2>
-          <div className="flex space-x-4 overflow-auto justify-items-center">
+          <div className="flex space-x-4 overflow-auto">
             {nftData.map((item, index) => (
-              <div key={index} className="bg-gray-800 p-4 rounded-lg">
+              <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-lg w-64">
                 <img
                   src={item.image}
                   alt={item.name}
@@ -143,9 +143,8 @@ const Music = () => {
           </div>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 
 export default Music;
-          
