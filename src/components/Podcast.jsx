@@ -26,7 +26,7 @@ const Podcast = () => {
   return (
     <div className="flex min-h-screen bg-gray-900 text-white">
       {/* Left Side with a Separator */}
-      <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center">
+      <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center mt-20">
         <h2 className="text-xl font-bold mb-4 text-center text-orange-500">Now Playing</h2>
 
         {/* Custom Audio Player */}
@@ -63,7 +63,6 @@ const Podcast = () => {
       <div className="w-4/5 p-8">
         {/* Music NFTs Section */}
         <div className="mb-12">
-          <h1 className="text-3xl font-bold mb-6 text-white">Podcast Page</h1>
           <h2 className="text-2xl font-semibold mb-6 text-white">Latest Podcast</h2>
           <div className="flex space-x-4 overflow-auto">
             {nftData.map((item, index) => (
