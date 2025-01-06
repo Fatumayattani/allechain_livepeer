@@ -1,7 +1,7 @@
-import React, { useState, useRef } from 'react'
-import { albumsData } from '../assets/assets'
-import AlbumItem from './AlbumItem'
-import { nftData } from '../assets/assets'
+import React, { useState, useRef } from 'react';
+import { albumsData } from '../assets/assets';
+import AlbumItem from './AlbumItem';
+import { nftData } from '../assets/assets';
 
 const Podcast = () => {
   const audioRef = useRef(null); // Reference to the audio element
@@ -70,20 +70,36 @@ const Podcast = () => {
           <h3 className="text-xl font-bold text-center text-orange-500 mb-4">Poll: What do you think about AI?</h3>
           <div className="flex flex-col space-y-4">
             <button
-              onClick={() => handleVote('Yes')}
+              onClick={() => handleVote('Exciting')}
               className={`${
-                vote === 'Yes' ? 'bg-orange-500' : 'bg-gray-700'
+                vote === 'Exciting' ? 'bg-orange-500' : 'bg-gray-700'
               } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
             >
-              Yes, it's fascinating!
+              Exciting and full of potential!
             </button>
             <button
-              onClick={() => handleVote('No')}
+              onClick={() => handleVote('Useful')}
               className={`${
-                vote === 'No' ? 'bg-orange-500' : 'bg-gray-700'
+                vote === 'Useful' ? 'bg-orange-500' : 'bg-gray-700'
               } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
             >
-              No, not interested
+              Very useful in daily tasks
+            </button>
+            <button
+              onClick={() => handleVote('Scary')}
+              className={`${
+                vote === 'Scary' ? 'bg-orange-500' : 'bg-gray-700'
+              } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
+            >
+              Scary and unpredictable
+            </button>
+            <button
+              onClick={() => handleVote('Uncertain')}
+              className={`${
+                vote === 'Uncertain' ? 'bg-orange-500' : 'bg-gray-700'
+              } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
+            >
+              Not sure, it has pros and cons
             </button>
             {vote && (
               <p className="mt-4 text-center text-white">
@@ -133,5 +149,6 @@ const Podcast = () => {
   );
 };
 
-export default Podcast
+export default Podcast;
+
 
