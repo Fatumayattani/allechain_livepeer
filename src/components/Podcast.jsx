@@ -6,6 +6,7 @@ import { nftData } from '../assets/assets'
 const Podcast = () => {
   const audioRef = useRef(null); // Reference to the audio element
   const [isPlaying, setIsPlaying] = useState(false);
+  const [vote, setVote] = useState(null); // To store poll vote
 
   // Handle play, pause, and stop functionalities
   const handlePlayPause = () => {
@@ -21,6 +22,11 @@ const Podcast = () => {
     audioRef.current.pause();
     audioRef.current.currentTime = 0;
     setIsPlaying(false);
+  };
+
+  // Handle poll vote
+  const handleVote = (choice) => {
+    setVote(choice);
   };
 
   return (
@@ -55,6 +61,34 @@ const Podcast = () => {
             >
               Stop
             </button>
+          </div>
+        </div>
+
+        {/* Poll Section */}
+        <div className="mt-8 w-full bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-bold text-center text-orange-500 mb-4">Poll: What do you think about AI in Podcasts?</h3>
+          <div className="flex flex-col space-y-4">
+            <button
+              onClick={() => handleVote('Yes')}
+              className={`${
+                vote === 'Yes' ? 'bg-orange-500' : 'bg-gray-700'
+              } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
+            >
+              Yes, it's fascinating!
+            </button>
+            <button
+              onClick={() => handleVote('No')}
+              className={`${
+                vote === 'No' ? 'bg-orange-500' : 'bg-gray-700'
+              } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
+            >
+              No, not interested
+            </button>
+            {vote && (
+              <p className="mt-4 text-center text-white">
+                You voted: <span className="font-semibold text-orange-500">{vote}</span>
+              </p>
+            )}
           </div>
         </div>
       </div>
@@ -99,3 +133,4 @@ const Podcast = () => {
 };
 
 export default Podcast
+
