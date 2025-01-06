@@ -1,33 +1,53 @@
-import React from 'react';
-import { albumsData } from '../assets/assets';
-import AlbumItem from './AlbumItem';
-import { nftData } from '../assets/assets';
+import React, { useState, useRef } from 'react'
+import { albumsData } from '../assets/assets'
+import AlbumItem from './AlbumItem'
+import { nftData } from '../assets/assets'
 
 const Podcast = () => {
+  const audioRef = useRef(null); // Reference to the audio element
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  // Handle play, pause, and stop functionalities
+  const handlePlayPause = () => {
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+  const handleStop = () => {
+    audioRef.current.pause();
+    audioRef.current.currentTime = 0;
+    setIsPlaying(false);
+  };
+
   return (
     <div className="flex min-h-screen bg-gray-900 text-white">
-      {/* Left Side: Sound Wave Visualizer */}
-      <div className="w-1/5 border-r border-gray-700 bg-gray-900 flex flex-col items-center py-8">
-        <h2 className="text-xl font-bold mb-6">Now Playing</h2>
-        <div className="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center mb-6">
-          <i className="fas fa-play text-white text-2xl"></i>
-        </div>
-        <div className="text-gray-300 text-sm text-center mb-6">
-          <p className="font-semibold text-white">Episode 42</p>
-          <p>AI Meets Livepeer</p>
-        </div>
-        {/* Sound Wave Visualizer */}
-        <div className="flex space-x-1">
-          {[1, 2, 3, 4, 5].map((_, i) => (
-            <div
-              key={i}
-              className="w-1 bg-white rounded animate-pulse"
-              style={{
-                height: `${Math.random() * 50 + 10}px`,
-                animationDelay: `${i * 0.1}s`,
-              }}
-            ></div>
-          ))}
+      {/* Left Side with a Separator */}
+      <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center">
+        <h2 className="text-xl font-bold mb-4">Now Playing</h2>
+
+        {/* Audio Player Controls */}
+        <audio ref={audioRef} className="w-full mb-4" controls>
+          <source src="/pod.wav" type="audio/wav" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <div className="flex space-x-4">
+          <button
+            className="bg-gray-700 p-2 rounded-full hover:bg-gray-600"
+            onClick={handlePlayPause}
+          >
+            {isPlaying ? 'Pause' : 'Play'}
+          </button>
+          <button
+            className="bg-gray-700 p-2 rounded-full hover:bg-gray-600"
+            onClick={handleStop}
+          >
+            Stop
+          </button>
         </div>
       </div>
 
@@ -71,5 +91,4 @@ const Podcast = () => {
   );
 };
 
-export default Podcast;
-
+export default Podcast
