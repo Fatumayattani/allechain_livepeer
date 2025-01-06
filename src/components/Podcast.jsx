@@ -75,7 +75,7 @@ const Podcast = () => {
                 vote === 'Exciting' ? 'bg-orange-500' : 'bg-gray-700'
               } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
             >
-              Exciting and full of potential!
+            Exciting Potential
             </button>
             <button
               onClick={() => handleVote('Useful')}
