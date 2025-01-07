@@ -1,7 +1,7 @@
-import React, { useState, useRef } from 'react';
-import { albumsData } from '../assets/assets';
-import AlbumItem from './AlbumItem';
-import { nftData } from '../assets/assets';
+import React, { useState, useRef } from 'react'
+import { albumsData } from '../assets/assets'
+import AlbumItem from './AlbumItem'
+import { nftData, musicData } from '../assets/assets'
 
 const Music = () => {
   const audioRef = useRef(null); // Reference to the audio element
@@ -39,7 +39,7 @@ const Music = () => {
         <div className="w-full bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center space-y-4">
           <div className="w-full">
             <audio ref={audioRef} className="w-full rounded-md mb-4" controls>
-              <source src="/music_sample.mp3" type="audio/mp3" />
+              <source src="/pop.mp3" type="audio/mp3" />
               Your browser does not support the audio element.
             </audio>
           </div>
@@ -113,7 +113,7 @@ const Music = () => {
         <div className="my-4">
           <h2 className="text-3xl font-bold mb-6 text-white">Latest Music</h2>
           <div className="flex space-x-4 overflow-auto">
-            {albumsData.map((item, index) => (
+            {musicData.map((item, index) => (
               <AlbumItem
                 key={index}
                 name={item.name}
@@ -147,4 +147,4 @@ const Music = () => {
   );
 };
 
-export default Music;
+export default Music

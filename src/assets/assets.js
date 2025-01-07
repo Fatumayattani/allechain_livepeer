@@ -49,12 +49,20 @@ import musicnft3 from './musicnft3.png'
 import musicnft4 from './musicnft4.png'
 import musicnft5 from './musicnft5.png'
 import musicnft6 from './musicnft6.png'
+
 import pod1 from './pod1.png'
 import pod2 from './pod2.png'
 import pod3 from './pod3.png'
 import pod4 from './pod4.png'
 import pod5 from './pod5.png'
 import pod6 from './pod6.png'
+
+import music1 from './music1.png'
+import music2 from './music2.png'
+import music3 from './music3.png'
+import music4 from './music4.png'
+import music5 from './music5.png'
+import music6 from './music6.png'
 
 
 export const assets = {
@@ -276,4 +284,42 @@ export const nftData = [
       image: pod6,
     },
   ]
+  export const musicData = [
+    {
+      id: 1,
+      name: "Ethereal Echoes",
+      artist: "Luna Harmonix",
+      image: music1,
+    },
+    {
+      id: 2,
+      name: "Neon Dreams",
+      artist: "SynthWavez",
+      image: music2,
+    },
+    {
+      id: 3,
+      name: "Serenade of the Stars",
+      artist: "Astral Melodies",
+      image: music3,
+    },
+    {
+      id: 4,
+      name: "Rhythms of the Jungle",
+      artist: "Tropic Grooves",
+      image: music4,
+    },
+    {
+      id: 5,
+      name: "Urban Soul Vibes",
+      artist: "MetroBeat",
+      image: music5,
+    },
+    {
+      id: 6,
+      name: "Rock Revival",
+      artist: "Crimson Chords",
+      image: music6,
+    },
+  ]  
   
