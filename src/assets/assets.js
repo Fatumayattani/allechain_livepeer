@@ -299,7 +299,7 @@ export const nftData = [
     },
     {
       id: 3,
-      name: "Serenade of the Stars",
+      name: "Finding My Way",
       artist: "Astral Melodies",
       image: music3,
     },

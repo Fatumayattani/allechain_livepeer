@@ -115,7 +115,7 @@ const Podcast = () => {
         <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-white">Latest Podcast</h2>
           <div className="flex space-x-4 overflow-auto">
-            {nftData.map((item, index) => (
+            {podData.map((item, index) => (
               <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-lg">
                 <img
                   src={item.image}

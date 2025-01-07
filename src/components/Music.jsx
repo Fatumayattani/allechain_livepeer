@@ -43,7 +43,7 @@ const Music = () => {
               Your browser does not support the audio element.
             </audio>
           </div>
-          <h3 className="text-sm font-bold mb-4 text-center text-white">Track Title</h3>
+          <h3 className="text-sm font-bold mb-4 text-center text-white">Finding My Way</h3>
           <div className="flex space-x-6">
             <button
               className={`${
