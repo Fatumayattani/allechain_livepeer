@@ -260,7 +260,7 @@ export const nftData = [
     },
     {
       id: 2,
-      name: "Tech Trends Today",
+      name: "AI meets Livepeer",
       image: pod2,
     },
     {
