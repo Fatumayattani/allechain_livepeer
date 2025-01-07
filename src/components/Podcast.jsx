@@ -132,7 +132,7 @@ const Podcast = () => {
         <div>
           <h2 className="text-2xl font-semibold mb-6 text-white">Previous Podcasts</h2>
           <div className="flex space-x-4 overflow-auto">
-            {podData.map((item, index) => (
+            {nftData.map((item, index) => (
               <AlbumItem
                 key={index}
                 name={item.name}
