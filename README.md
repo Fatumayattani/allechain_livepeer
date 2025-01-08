@@ -16,7 +16,8 @@
 ## 2. Login Page
 
 After clicking the **Get Started** button on the landing page, users are directed to the **Login Page**, where they can log in or sign up to access the platform.
-![Login Page](src/assets/login-image.png) 
+
+![Login Page](public/log-image.PNG) 
 
 ### Login Options:
 The login page provides three login options:

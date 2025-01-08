@@ -140,13 +140,12 @@ const Login = () => {
 
           {/* Connect Wallet and Continue with Google */}
           <div className="flex flex-col space-y-4 w-full">
-            <ConnectWallet
-              className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-orange-500 rounded-lg hover:bg-orange-500 hover:text-black transition-colors duration-200"
-            >
-              <Wallet className="h-5 w-5" />
-              <span>Connect Wallet</span>
-            </ConnectWallet>
-
+          <ConnectWallet
+         className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-orange-500 rounded-lg hover:bg-orange-500 hover:text-black transition-colors duration-200"
+         >
+         <Wallet className="h-5 w-5" />
+         <span>Connect Wallet</span>
+         </ConnectWallet>
             <button
               type="button"
               className="w-full flex items-center justify-center gap-3 px-4 py-3 border-2 border-orange-500 rounded-lg hover:bg-orange-500 hover:text-black transition-colors duration-200"
