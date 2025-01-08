@@ -1,12 +1,11 @@
-import React, { useState, useRef } from 'react'
-import { albumsData } from '../assets/assets'
-import AlbumItem from './AlbumItem'
-import { nftData, musicData } from '../assets/assets'
+import React, { useState, useRef } from 'react';
+import { albumsData } from '../assets/assets';
+import AlbumItem from './AlbumItem';
+import { nftData, musicData } from '../assets/assets';
 
 const Music = () => {
   const audioRef = useRef(null); // Reference to the audio element
   const [isPlaying, setIsPlaying] = useState(false);
-  const [vote, setVote] = useState(null); // To store poll vote
 
   // Handle play, pause, and stop functionalities
   const handlePlayPause = () => {
@@ -24,14 +23,9 @@ const Music = () => {
     setIsPlaying(false);
   };
 
-  // Handle poll vote
-  const handleVote = (choice) => {
-    setVote(choice);
-  };
-
   return (
     <div className="flex min-h-screen bg-gray-900 text-white">
-      {/* Left Side with Music Player and Poll */}
+      {/* Left Side with Music Player and Staking Section */}
       <div className="w-1/5 border-r border-gray-700 p-4 flex flex-col items-center mt-8">
         <h2 className="text-xl font-bold mb-4 text-center text-orange-500">Now Playing</h2>
 
@@ -62,47 +56,25 @@ const Music = () => {
           </div>
         </div>
 
-        {/* Poll Section */}
+        {/* Music NFT Staking Section */}
         <div className="mt-16 w-full bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h3 className="text-xl font-bold text-center text-orange-500 mb-4">Poll: What's your favorite music genre?</h3>
+          <h3 className="text-xl font-bold text-center text-orange-500 mb-4">
+            Stake Your Music NFTs
+          </h3>
+          <p className="text-gray-400 text-center mb-4">
+            Lock in your music NFTs and earn rewards or exclusive perks!
+          </p>
           <div className="flex flex-col space-y-4">
             <button
-              onClick={() => handleVote('Rock')}
-              className={`${
-                vote === 'Rock' ? 'bg-orange-500' : 'bg-gray-700'
-              } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
+              className="bg-gray-700 text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300"
             >
-              Rock
+              View Staking Benefits
             </button>
             <button
-              onClick={() => handleVote('Pop')}
-              className={`${
-                vote === 'Pop' ? 'bg-orange-500' : 'bg-gray-700'
-              } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
+              className="bg-gray-700 text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300"
             >
-              Pop
+              Stake Now
             </button>
-            <button
-              onClick={() => handleVote('Hip Hop')}
-              className={`${
-                vote === 'Hip Hop' ? 'bg-orange-500' : 'bg-gray-700'
-              } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
-            >
-              Hip Hop
-            </button>
-            <button
-              onClick={() => handleVote('Jazz')}
-              className={`${
-                vote === 'Jazz' ? 'bg-orange-500' : 'bg-gray-700'
-              } text-white p-3 rounded-lg hover:bg-orange-400 transition duration-300`}
-            >
-              Jazz
-            </button>
-            {vote && (
-              <p className="mt-4 text-center text-white">
-                You voted: <span className="font-semibold text-orange-500">{vote}</span>
-              </p>
-            )}
           </div>
         </div>
       </div>
@@ -147,4 +119,4 @@ const Music = () => {
   );
 };
 
-export default Music
+export default Music;

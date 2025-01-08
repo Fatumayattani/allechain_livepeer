@@ -9,7 +9,7 @@ function LiveConcerts() {
       <div className="w-full max-w-7xl mt-6">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
           <div className="col-span-3">
-            <LivestreamPlayer streamUrl="https://example.com/stream" />
+            <LivestreamPlayer streamUrl="https://lvpr.tv/broadcast/6858-2zye-gsmc-oas7" />
             <StreamInfo />
           </div>
           <div className="col-span-2">
