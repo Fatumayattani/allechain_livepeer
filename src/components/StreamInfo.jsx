@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Clock, Users } from 'lucide-react';
 
 function StreamInfo() {
-  const [duration, setDuration] = useState('02:34:15');
+  const [duration, setDuration] = useState('00:05:15');
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -30,7 +30,7 @@ function StreamInfo() {
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
-      <h1 className="text-2xl font-bold mb-4">🎥 Live: Amazing Content Stream</h1>
+      <h1 className="text-2xl font-bold mb-4">🎥 Live: AlleChain Demo</h1>
 
       <div className="flex items-center gap-6 text-gray-600">
         <div className="flex items-center gap-2">
@@ -39,13 +39,13 @@ function StreamInfo() {
         </div>
         <div className="flex items-center gap-2">
           <Users size={18} />
-          <span>1,234 watching</span>
+          <span>1 watching</span>
         </div>
       </div>
 
       <div className="mt-4">
         <p className="text-gray-700">
-          Join us for a live and interactive concert experience! Stay tuned for more exciting moments.
+        Welcome to the Prototype Showcase for Livepeer.
         </p>
       </div>
     </div>

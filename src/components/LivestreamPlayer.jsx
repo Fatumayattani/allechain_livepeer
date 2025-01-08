@@ -3,19 +3,19 @@ import { Play, Pause, Users, Heart, Share2 } from 'lucide-react';
 
 function LivestreamPlayer({ streamUrl }) {
   const [isPlaying, setIsPlaying] = useState(true);
-  const [viewers, setViewers] = useState(1234);
-  const [likes, setLikes] = useState(856);
+  const [viewers, setViewers] = useState(1);
+  const [likes, setLikes] = useState(0);
 
   return (
     <div className="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-      <iframe 
-        src={streamUrl}
-        className={`w-full h-full ${!isPlaying ? 'hidden' : ''}`}
-        allow="autoplay; fullscreen"
-        allowFullScreen
-      />
-      
-      {!isPlaying && (
+      <iframe
+  src={streamUrl}
+  className={`w-full h-full ${!isPlaying ? 'hidden' : ''}`}
+  allow="autoplay; fullscreen; microphone; camera"
+  title="Live Stream"
+></iframe>
+
+       {!isPlaying && (
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900 to-blue-900 flex items-center justify-center">
           <img
             src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?auto=format&fit=crop&w=1200&q=80"
