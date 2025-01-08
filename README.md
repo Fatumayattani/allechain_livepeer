@@ -13,21 +13,17 @@
 
 ---
 
-## **Get Started**
-Click below to sign up or log in.
+## 2. Login Page
 
-<div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-  <button onClick={() => navigate('/login')} className="bg-orange-500 text-white px-4 py-2 rounded-lg">
-    Get Started
-  </button>
-</div>
+After clicking the **Get Started** button on the landing page, users are directed to the **Login Page**, where they can log in or sign up to access the platform.
+![Login Page](src/assets/login-image.png) 
 
----
+### Login Options:
+The login page provides three login options:
 
-## **Login Options**
-- **Email and Password**: Secure access via your registered email and password.
-- **Connect Wallet**: Log in directly with your crypto wallet.
-- **Continue with Google**: Quick login using your Google account.
+1. **Email and Password**: Users can enter their email address and password to log in.
+2. **Connect Wallet**: Users can choose to connect their cryptocurrency wallet for authentication.
+3. **Continue with Google**: For users who prefer quick access, they can log in using their Google account.
 
 ---
 
