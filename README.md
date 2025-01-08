@@ -23,13 +23,16 @@ After clicking the **Get Started** button on the landing page, users are directe
 The login page provides three login options:
 
 1. **Email and Password**: Users can enter their email address and password to log in.
-2. **Connect Wallet**: Users can choose to connect their cryptocurrency wallet for authentication.
-3. **Continue with Google**: For users who prefer quick access, they can log in using their Google account.
+2. **Continue with Google**: For users who prefer quick access, they can log in using their Google account.
+3. **Connect Wallet**: Users can choose to connect their cryptocurrency wallet for authentication.
 
 ---
 
 ## **Main Menu**
-Once logged in, you'll be directed to the main menu, where you can access the following:
+Once logged in, you'll be directed to the main menu, 
+![Menu Page](public/menu.PNG) 
+
+where you can access the following:
 
 1. **Music Page**  
    - **Playlist**: Discover music from independent artists.
