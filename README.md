@@ -25,7 +25,7 @@ The login page provides three login options:
 1. **Email and Password**: Users can enter their email address and password to log in.
 2. **Continue with Google**: For users who prefer quick access, they can log in using their Google account.
 3. **Connect Wallet**: Users can choose to connect their cryptocurrency wallet for authentication.
-[![Connect Wallet](public/walcon-thumbnail.png)](https://vimeo.com/1044977907?share=copy#t=0)
+![Connect Wallet](https://vimeo.com/1044977907?share=copy#t=0)
 ---
 
 ## **Main Menu**
