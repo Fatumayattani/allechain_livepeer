@@ -8,7 +8,7 @@
 
 ## **Landing Page**
 
-![Landing Page](src/assets/landing-image.PNG)  
+![Landing Page](public/landing-page.PNG)  
 **Start your journey with AlleChain** – A decentralized platform for music, podcasts, and live streaming.
 
 ---
