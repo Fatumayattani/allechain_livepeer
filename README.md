@@ -26,7 +26,6 @@ The login page provides three login options:
 2. **Continue with Google**: For users who prefer quick access, they can log in using their Google account.
 3. **Connect Wallet**: Users can choose to connect their cryptocurrency wallet for authentication.
 
-[![Connect Wallet](https://i.vimeocdn.com/video/1044977907.jpg)](https://vimeo.com/1044977907?h=c879986781)
 ---
 
 ## **Main Menu**
@@ -37,9 +36,10 @@ Where you can access the following:
 
 1. **Music Page**  
 ![Music Page](public/mft.PNG) 
-   - **Playlist**: Discover music from independent artists.
-   - **Music NFTs**: Buy and stake exclusive music NFTs.
-   - **Now Playing**: View currently playing tracks.
+- The music page offers a wide variety of content for music lovers. It allows users to discover a diverse selection of tracks from independent artists, providing an exciting opportunity to explore fresh and unique sounds. Additionally, the page offers exclusive music NFTs that can be purchased and staked, allowing fans to invest in digital collectibles and support their favorite musicians in a new and innovative way. 
+
+---- 
+
 
 2. **Podcast Page**  
 ![Menu Page](public/podcastss.PNG) 
