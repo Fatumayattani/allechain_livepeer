@@ -32,14 +32,16 @@ The login page provides three login options:
 Once logged in, you'll be directed to the main menu, 
 ![Menu Page](public/menu.PNG) 
 
-where you can access the following:
+Where you can access the following:
 
 1. **Music Page**  
+![Music Page](public/mft.PNG) 
    - **Playlist**: Discover music from independent artists.
-   - **Music NFTs**: Buy and trade exclusive music NFTs.
+   - **Music NFTs**: Buy and stake exclusive music NFTs.
    - **Now Playing**: View currently playing tracks.
 
 2. **Podcast Page**  
+![Menu Page](public/podcastss.PNG) 
    - **Podcast Playlist**: Browse through the latest podcasts.
    - **Now Playing**: See the current podcast playing.
    - **Polls**: Participate in polls about the podcast you're listening to.
