@@ -34,23 +34,24 @@ Once logged in, you'll be directed to the main menu,
 
 Where you can access the following:
 
-1. **Music Page**  
-The music page offers a rich and diverse collection of content for music lovers, creating an immersive environment where fans can discover new artists and tracks. Users can explore a variety of music from independent artists, providing a unique opportunity to dive into fresh and innovative sounds across multiple genres. With the ability to uncover emerging talent and hidden gems, the music page caters to every listener's taste and preferences.
+**Music Page**  
+The music page in this prototype envisions a dynamic space for music lovers to explore a wide range of tracks from independent artists. Users would have the opportunity to discover fresh sounds, uncover new talent, and enjoy music across diverse genres. This feature would allow fans to connect with the music they love while supporting emerging artists, all within a user-friendly interface designed for seamless discovery.
 
 ![Music Page](public/mft.PNG) 
 
-In addition to the music library, the page offers exclusive music NFTs, enabling fans to purchase and stake rare digital collectibles. This feature allows users to directly support their favorite musicians while participating in the growing trend of blockchain-based music investment. By incorporating these digital assets, the page adds a new layer of engagement and interaction, making the experience even more exciting. Whether users are here to enjoy their favorite tracks or explore new musical horizons, the music page creates a dynamic and interactive space for all music enthusiasts.
+Additionally, the page would offer the chance to engage with exclusive music NFTs, allowing users to purchase and stake unique digital collectibles tied to their favorite tracks and artists. This feature aims to provide an innovative way for fans to invest in music and support their favorite creators in a new, blockchain-driven way. While these features are part of the prototype and not yet available, they reflect the platform’s potential to revolutionize how fans interact with music. The music page is designed to offer an immersive and engaging experience for all music enthusiasts, blending content discovery with innovative engagement opportunities.
 
 ---- 
 
 
-2. **Podcast Page**  
+**Podcast Page**  
+The podcast page in this prototype offers an envisioned space for podcast lovers to explore a broad selection of shows across various genres. Users would have the opportunity to browse through the latest episodes from both independent creators and well-known voices, discovering new content to match their interests. Whether it’s deep discussions on current events, engaging storytelling, or light-hearted banter, the page would aim to provide something for everyone.
 ![Menu Page](public/podcastss.PNG) 
-   - **Podcast Playlist**: Browse through the latest podcasts.
-   - **Now Playing**: See the current podcast playing.
-   - **Polls**: Participate in polls about the podcast you're listening to.
 
-3. **Livestream Page**  
+The page also includes a feature for Polls, where listeners would be able to participate in discussions related to the podcasts they're listening to. This would allow fans to share their opinions on the content, creating a sense of community and giving them an active role in the conversation. This feature is designed to bring listeners closer to the content and the creators, offering an interactive experience where feedback and engagement are valued. While these features are part of the prototype, they highlight the direction the platform is headed in, aiming to create a more interactive and engaging podcast experience in the future.
+  
+
+**Livestream Page**  
    - **Live Events**: Watch live performances from your favorite artists and creators.
    - **Chat Feature**: Engage with creators and fellow fans via live chat.
 
