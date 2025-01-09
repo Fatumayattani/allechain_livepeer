@@ -90,21 +90,41 @@ The page also includes a feature for Polls, where listeners would be able to par
 
 ---
 
-## 2. **Upcoming Features and Activities**  
-Our vision is to grow the **AlleChain community** into the ultimate destination for music lovers and creators. Here’s what we’re building to make it happen:  
+## Installation and Usage
 
-- **Live Q&A Sessions with Artists**: Connect with your favorite creators through interactive AMAs.  
-- **Fan Contests and Challenges**: Compete in remix battles, fan art contests, and creative challenges to win exclusive rewards.  
-- **Referral Program**: Invite friends to join AlleChain and earn special perks for growing the community.  
-- **Spotlight Opportunities**: Celebrate top contributors, artists, and fans in exclusive features.  
+To run the project locally, follow these steps:
 
----
+### Prerequisites
 
-## 3. **Why Join the AlleChain Community?**  
-Becoming a part of **AlleChain’s community** is more than just joining a platform—it’s joining a movement.  
+- [Node.js](https://nodejs.org/) (Recommended version: 14.x or above)
+- [npm](https://www.npmjs.com/get-npm)
+- A Livepeer API key (for streaming)
+- Thirdweb Client ID (for NFT integration)
 
-- **Shape the Future**: Your feedback directly influences the platform’s growth and direction.  
-- **Exclusive Perks**: Enjoy early access to platform features, token drops, and community-only events.  
-- **Meaningful Connections**: Network with like-minded individuals who are passionate about music, NFTs, and innovation.  
+### Steps to Setup
 
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Fatumayattani/allechain_livepeer.git
+   cd allechain_livepeer
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Create a `.env` file** in the root directory and add the following environment variables:
+
+   ```plaintext
+   REACT_APP_LIVEPEER_API_KEY=your_livepeer_api_key
+   REACT_APP_THIRDWEB_CLIENT_ID=your_thirdweb_client_id
+   ```
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+   The app will be available at `http://localhost:5176`.
 
