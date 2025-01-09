@@ -16,9 +16,10 @@
 ## Tokenization & Smart Contracts
 We tested our smart contracts using **Remix IDE**, Remix helped us simulate and verify the contract behavior in a secure environment before deploying it to the Ethereum network. The contract was thoroughly tested for key features like:
 
-- **NFT creation**: Ensuring the minting process for music and podcast NFTs works as expected.
-- **Token staking**: Verifying that tokens can be staked and unstaked correctly.
-- **Transactions**: Ensuring safe and secure transfers of NFTs between users.
+- **NFT Creation**: Users can mint new Music NFTs by providing metadata (URI) and setting a price.
+- **NFT Trading**: Securely buy and sell NFTs with transparent ownership transfer and pricing mechanisms.
+- **NFT Staking**: Users can stake their NFTs for added utility and unstake them when required.
+- **Detailed NFT Metadata**: Access detailed information about NFTs, including ownership, price, and metadata URI.
 
 ![contract](public/token.PNG) 
 
