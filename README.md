@@ -26,6 +26,8 @@ Once tested, the contract was successfully added to the project and integrated w
 
 ---
 
+## Pages Overview
+
 ## **Landing Page**
 
 ![Landing Page](public/landing-page.PNG)  
