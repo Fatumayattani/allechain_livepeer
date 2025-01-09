@@ -77,75 +77,14 @@ The page also includes a feature for Polls, where listeners would be able to par
 
 ---
 
-## **Target Audience**
-- **Independent artists** seeking visibility and fair compensation in Africa.
-- **Podcasters** looking for decentralized platforms with fewer restrictions.
-- **Fans and music lovers** looking for unique content and ways to support their favorite creators.
-- **Event organizers** interested in livestreaming concerts and performances.
-
----
-
-## **Competitive Advantage**
-- **Decentralized architecture** for transparent and scalable streaming.
-- **Lower fees** for creators compared to traditional platforms.
-- **Tokenized economy** and NFTs to offer fans ownership of exclusive moments.
----
-
-## **Revenue Model**  
-
-1. **Subscription Plans**  
-   - Free tier with ads and premium, ad-free plans for listeners.  
-   - Premium users unlock high-quality streaming and exclusive content.
-
-2. **Transaction Fees**  
-   - A **small commission** on token transactions.
-
-3. **Tipping System**  
-   - Fans can purchase tokens and tip artists or creators during live streams.
-
-4. **Sponsored Content**  
-   - Ad placements for podcasts and music.
-
-5. **Event Tickets**  
-   - Livestreamed events may have paid ticket options for exclusive access.
-
----
-
-## **Technology Stack**  
-
-- **Frontend**: Built with **React.js** for a dynamic user interface.  
-- **Styling**: Utilizes **Tailwind CSS** for responsive design.  
-- **Streaming Infrastructure**: Powered by **Livepeer** for decentralized, scalable livestreaming.  
-- **Blockchain**: Smart contracts on Ethereum manage transactions and ownership.
-
----
-
-## **Marketing Strategy**  
-
-### 1. **Social Media Campaigns**  
-- Launch awareness campaigns on Twitter, Instagram, and TikTok.  
-- Collaborate with micro-influencers and content creators.
-
-### 2. **Community Building**  
-- Host regular **livestreamed events** and AMA sessions to engage with users.  
-- Launch a **referral program** with incentives for new users.
-
-### 3. **Partnerships with Festivals and Events**  
-- Partner with music festivals and independent venues to **livestream concerts**.
-
-### 4. **Token Drops and Limited Content**  
-- Collaborate with artists on **exclusive token drops** to generate buzz.
-
-### 5. **Content Creator Incentives**  
-- Offer early creators **discounts on platform fees** or **free tokens** for top performers.
-
 ---
 # **Community Building**
 
 ## 1. **Join the AlleChain Community**  
 Become a part of the vibrant **AlleChain family**, where fans, artists, and collectors collaborate to transform music and NFTs. Joining the community connects you to exciting updates, exclusive content, and opportunities to shape the platform's future.  
 
-- **Discord**: [Join our Discord Community](https://discord.gg/zK6WmfnXdb) to chat in real time, participate in discussions, and stay updated.  
+- **Discord**: [Join our Discord Community](https://discord.gg/zK6WmfnXdb) to chat in real time, participate in discussions, and stay updated.
+![Menu Page](public/discord.jpg)   
 - **X (formerly Twitter)**: [Follow us on Twitter](#) for announcements, artist showcases, and engaging polls.  
 - **Email Updates**: Sign up for [exclusive email updates](#) to get first-hand information on upcoming events,and platform features.  
 
