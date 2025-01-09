@@ -74,6 +74,7 @@ The page also includes a feature for Polls, where listeners would be able to par
 **Livestream Page**  
    - **Live Events**: Watch live performances from your favorite artists and creators.
    - **Chat Feature**: Engage with creators and fellow fans via live chat.
+   ![Live Events](public/live.PNG) 
 
 ---
 

@@ -6,7 +6,7 @@ function Chat() {
   const [messages, setMessages] = useState([
     { id: 1, user: 'Sarah', content: 'Great stream today! 🎉', timestamp: new Date() },
     { id: 2, user: 'Mike', content: 'The quality is amazing!', timestamp: new Date() },
-    { id: 3, user: 'Alex', content: 'Can\'t wait for the next part', timestamp: new Date() },
+    { id: 3, user: 'Alex', content: 'wait for the next part', timestamp: new Date() },
   ]);
   const [newMessage, setNewMessage] = useState('');
   const [isMinimized, setIsMinimized] = useState(false);
@@ -17,7 +17,7 @@ function Chat() {
 
     setMessages((prev) => [
       ...prev,
-      { id: Date.now(), user: 'You', content: newMessage, timestamp: new Date() },
+      { id: Date.now(), user: 'Fatuma', content: newMessage, timestamp: new Date() },
     ]);
     setNewMessage('');
   };

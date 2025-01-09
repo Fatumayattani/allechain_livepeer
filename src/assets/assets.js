@@ -213,7 +213,7 @@ export const nftData = [
       name: "Midnight Lights",
       desc: "A one-of-a-kind music poster NFT with exclusive artwork.",
       image: musicnft1,
-      price: "0.5 ETH",
+      price: "0.05 ETH",
     },
     {
       id: 2,
@@ -227,28 +227,28 @@ export const nftData = [
       name: "Soundwaves in Space",
       desc: "An NFT featuring a rare design for an underground music track.",
       image: musicnft3,
-      price: "1.0 ETH",
+      price: "0.092 ETH",
     },
     {
       id: 4,
       name: "Electric Soul",
       desc: "A collectible poster from a legendary music concert.",
       image: musicnft4,
-      price: "1.2 ETH",
+      price: "1.0 ETH",
     },
     {
       id: 5,
       name: "Mystic Beats",
       desc: "A vibrant music poster NFT to celebrate the artist's latest album.",
       image: musicnft5,
-      price: "0.6 ETH",
+      price: "0.676 ETH",
     },
     {
       id: 6,
       name: "Retro Future",
       desc: "A futuristic design to represent the future of music.",
       image: musicnft6,
-      price: "0.8 ETH",
+      price: "0.85 ETH",
     },
   ]
 

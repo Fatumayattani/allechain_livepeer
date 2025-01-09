@@ -99,7 +99,7 @@ const Music = () => {
 
         {/* Music NFTs Section */}
         <div className="my-4">
-          <h2 className="text-3xl font-bold mb-6 text-white">Music NFTs</h2>
+          <h2 className="text-3xl font-bold mb-6 text-white">Live Music NFTs</h2>
           <div className="flex space-x-4 overflow-auto">
             {nftData.map((item, index) => (
               <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-lg w-64">
