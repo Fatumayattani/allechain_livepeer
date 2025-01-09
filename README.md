@@ -86,7 +86,7 @@ Become a part of the vibrant **AlleChain family**, where fans, artists, and coll
 - **Discord**: [Join our Discord Community](https://discord.gg/zK6WmfnXdb) to chat in real time, participate in discussions, and stay updated.
 ![Menu Page](public/discord.jpg)   
 - **X (formerly Twitter)**: [Follow us on Twitter](https://x.com/AlleChain) for announcements, artist showcases, and engaging polls.  
-- **Email Updates**: Sign up for [exclusive email updates](#) to get first-hand information on upcoming events,and platform features.  
+- **Email Updates**: Sign up for [exclusive email updates](https://allechain.netlify.app/) to get first-hand information on upcoming events,and platform features.  
 
 ---
 
