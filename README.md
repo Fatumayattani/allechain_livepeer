@@ -22,8 +22,6 @@ We tested our smart contracts using **Remix IDE**, a powerful tool for Ethereum 
 
 ![contract](public/token.PNG) 
 
-Once tested, the contract was successfully added to the project and integrated with the frontend, enabling fans to engage with and support their favorite artists through blockchain-based mechanisms.
-
 ---
 
 ## Pages Overview
