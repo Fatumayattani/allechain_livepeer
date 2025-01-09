@@ -145,7 +145,7 @@ The page also includes a feature for Polls, where listeners would be able to par
 ## 1. **Join the AlleChain Community**  
 Become a part of the vibrant **AlleChain family**, where fans, artists, and collectors collaborate to transform music and NFTs. Joining the community connects you to exciting updates, exclusive content, and opportunities to shape the platform's future.  
 
-- **Discord**: [Join our Discord Community](https://discord.gg/JBFjV5PXsave) to chat in real time, participate in discussions, and stay updated.  
+- **Discord**: [Join our Discord Community](https://discord.gg/zK6WmfnXdb) to chat in real time, participate in discussions, and stay updated.  
 - **X (formerly Twitter)**: [Follow us on Twitter](#) for announcements, artist showcases, and engaging polls.  
 - **Email Updates**: Sign up for [exclusive email updates](#) to get first-hand information on upcoming events,and platform features.  
 
