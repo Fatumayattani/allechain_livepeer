@@ -5,6 +5,19 @@
 **AlleChain** is a groundbreaking decentralized streaming platform that leverages **Livepeer** to provide real-time livestreaming capabilities for **independent artists, podcasters, and content creators**. By integrating blockchain technology, AlleChain ensures transparent transactions, fair artist compensation, and direct fan engagement through NFTs and tokenized support mechanisms. Our mission is to revolutionize how creators and fans connect, creating a secure, scalable, and engaging platform for audio lovers worldwide.
 
 ---
+## Features
+
+- **Music & Podcast Hub**: Discover independent music and podcasts. Fans can purchase NFTs for exclusive content and support their favorite creators by staking tokens.
+- **Livestreaming**: Enjoy live performances, podcasts, and interactive events with chat features for real-time fan engagement.
+- **Tokenization**: Artists and creators benefit from a new revenue model through NFTs and staking, offering fans ownership and rewards.
+
+---
+
+## Tokenization & Smart Contracts
+
+AlleChain uses Ethereum smart contracts to handle transactions, music/podcast ownership, and NFT-based interactions. This ensures secure and transparent operations for all content, from NFTs to staking rewards.
+
+---
 
 ## **Landing Page**
 
