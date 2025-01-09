@@ -1,0 +1,324 @@
+[
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "nextTokenId",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getMusicNFTDetails",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            },
+            {
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "tokenOwners",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "tokenPrices",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "tokenURIs",
+        "outputs": [
+            {
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "staker",
+                "type": "address"
+            }
+        ],
+        "name": "stakedNFTs",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "price",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "tokenURI",
+                "type": "string"
+            }
+        ],
+        "name": "MusicNFTCreated",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "price",
+                "type": "uint256"
+            }
+        ],
+        "name": "MusicNFTPriceUpdated",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "newOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "price",
+                "type": "uint256"
+            }
+        ],
+        "name": "MusicNFTBought",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "staker",
+                "type": "address"
+            }
+        ],
+        "name": "MusicNFTStaked",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "staker",
+                "type": "address"
+            }
+        ],
+        "name": "MusicNFTUnstaked",
+        "type": "event"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "tokenURI",
+                "type": "string"
+            },
+            {
+                "name": "price",
+                "type": "uint256"
+            }
+        ],
+        "name": "createMusicNFT",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "name": "newPrice",
+                "type": "uint256"
+            }
+        ],
+        "name": "updatePrice",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "buyMusicNFT",
+        "outputs": [],
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "stakeMusicNFT",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "unstakeMusicNFT",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]
+
+  
