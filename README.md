@@ -14,7 +14,7 @@
 ---
 
 ## Tokenization & Smart Contracts
-We tested our smart contracts using **Remix IDE**, a powerful tool for Ethereum contract development. Remix helped us simulate and verify the contract behavior in a secure environment before deploying it to the Ethereum network. The contract was thoroughly tested for key features like:
+We tested our smart contracts using **Remix IDE**, Remix helped us simulate and verify the contract behavior in a secure environment before deploying it to the Ethereum network. The contract was thoroughly tested for key features like:
 
 - **NFT creation**: Ensuring the minting process for music and podcast NFTs works as expected.
 - **Token staking**: Verifying that tokens can be staked and unstaked correctly.
