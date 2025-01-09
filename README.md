@@ -13,9 +13,16 @@
 
 ---
 
-## Tokenization & Smart Contracts
+### Testing on Remix
+We tested our smart contracts using **Remix IDE**, a powerful tool for Ethereum contract development. Remix helped us simulate and verify the contract behavior in a secure environment before deploying it to the Ethereum network. The contract was thoroughly tested for key features like:
 
-AlleChain uses Ethereum smart contracts to handle transactions, music/podcast ownership, and NFT-based interactions. This ensures secure and transparent operations for all content, from NFTs to staking rewards.
+- **NFT creation**: Ensuring the minting process for music and podcast NFTs works as expected.
+- **Token staking**: Verifying that tokens can be staked and unstaked correctly.
+- **Transactions**: Ensuring safe and secure transfers of NFTs between users.
+
+![contract](public/token.PNG) 
+
+Once tested, the contract was successfully added to the project and integrated with the frontend, enabling fans to engage with and support their favorite artists through blockchain-based mechanisms.
 
 ---
 
