@@ -115,14 +115,7 @@ To run the project locally, follow these steps:
    npm install
    ```
 
-3. **Create a `.env` file** in the root directory and add the following environment variables:
-
-   ```plaintext
-   REACT_APP_LIVEPEER_API_KEY=your_livepeer_api_key
-   REACT_APP_THIRDWEB_CLIENT_ID=your_thirdweb_client_id
-   ```
-
-4. **Run the development server:**
+3. **Run the development server:**
    ```bash
    npm run dev
    ```
