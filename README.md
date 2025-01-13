@@ -147,5 +147,46 @@ To run the project locally, follow these steps:
    npm run dev
    ```
 
-   The app will be available at `http://localhost:5173`.
+   The app will be available at `http://localhost:5173`
+
+   ---
+## Future Plans with Timelines
+### Livestreaming Enhancements (January 15 - February 10)
+- Optimize livestreaming features using Livepeer for high-quality streaming.
+- Implement interactive features like polls and live chat during livestreams to enhance fan engagement.
+- Enable livestreaming for podcasts, supporting both video and audio formats, using Livepeer’s scalable infrastructure.
+- **Live Music NFT Creation**:
+  - Stream live music events and concerts using Livepeer.
+  - Mint NFTs representing live concert experiences, including ticket NFTs, exclusive concert recordings, VIP access passes, and fan badges.
+  - Implement collectible digital merchandise (artwork, posters, etc.) as NFTs tied to live performances.
+  - Explore NFT-based revenue models, such as royalties for both artists and NFT holders, and charity auctions for special live music NFTs.
+
+### Backend Developments (February 15 - March 15)
+- Build additional APIs for NFT creation, trading, and staking features.
+- Finalize secure authentication methods for platform access.
+
+### Mainnet Deployment (March 15 - March 20)
+- Deploy smart contracts to Ethereum mainnet.
+- Conduct end-to-end testing and ensure platform reliability.
+
+
+### Podcast and Music Page Development (February 1 - February 28)
+- Build a dynamic interface for podcast and music exploration.
+- Integrate bookmarking for saving favorite music and also podcast episodes.
+
+### User Feedback & Beta Testing (March 1 - March 31)
+- Roll out beta access for select users to gather early feedback.
+- Improve UX/UI based on user feedback to refine the platform.
+
+### Future Innovations (April - Beyond)
+- **Mobile App Development**:
+  - Launch a dedicated mobile app for AlleChain to enhance accessibility.
+- **Subscription Models**:
+  - Introduce a subscription-based model with exclusive benefits.
+- **Multi-Chain Integration**:
+  - Expand blockchain support for lower fees and broader accessibility.
+- **AI-Powered Features**:
+  - Incorporate AI-driven recommendations for music and podcast discovery.
+- **Revenue Sharing Mechanisms**:
+  - Develop advanced royalty-sharing features for creators and NFT holders.
 
