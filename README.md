@@ -58,7 +58,7 @@ Where you can access the following:
 **Music Page**  
 The music page in this prototype envisions a dynamic space for music lovers to explore a wide range of tracks from independent artists. Users would have the opportunity to discover fresh sounds, uncover new talent, and enjoy music across diverse genres. This feature would allow fans to connect with the music they love while supporting emerging artists, all within a user-friendly interface designed for seamless discovery.
 
-![Music Page](public/mft.PNG) 
+![Music Page](public/musicft.PNG) 
 
 Additionally, the page would offer the chance to engage with exclusive music NFTs, allowing users to purchase and stake unique digital collectibles tied to their favorite tracks and artists. This feature aims to provide an innovative way for fans to invest in music and support their favorite creators in a new, blockchain-driven way. While these features are part of the prototype and not yet available, they reflect the platform’s potential to revolutionize how fans interact with music. The music page is designed to offer an immersive and engaging experience for all music enthusiasts, blending content discovery with innovative engagement opportunities.
 
