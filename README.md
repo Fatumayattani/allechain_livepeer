@@ -84,6 +84,8 @@ Live Music NFTs revolutionize the way fans and artists interact by offering uniq
 - **Artist Support**:
   - Pre-sale NFTs to fund tours or event production.
   - Tour-specific NFTs encouraging fans to collect exclusive sets.
+ 
+The smart contract has been thoroughly tested and successfully deployed on Remix, with all functions performing as expected during the testing phase. Check below
 
   ![contract](public/token.PNG) 
 
