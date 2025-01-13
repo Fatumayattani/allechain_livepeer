@@ -13,18 +13,6 @@
 
 ---
 
-## Tokenization & Smart Contracts
-We tested our smart contracts using **Remix IDE**, Remix helped us simulate and verify the contract behavior in a secure environment before deploying it to the Ethereum network. The contract was thoroughly tested for key features like:
-
-- **NFT Creation**: Users can mint new Music NFTs by providing metadata (URI) and setting a price.
-- **NFT Trading**: Securely buy and sell NFTs with transparent ownership transfer and pricing mechanisms.
-- **NFT Staking**: Users can stake their NFTs for added utility and unstake them when required.
-- **Detailed NFT Metadata**: Access detailed information about NFTs, including ownership, price, and metadata URI.
-
-![contract](public/token.PNG) 
-
----
-
 ## Pages Overview
 
 ## **Landing Page**
@@ -60,7 +48,45 @@ The music page in this prototype envisions a dynamic space for music lovers to e
 
 ![Music Page](public/musicft.PNG) 
 
-Additionally, the page would offer the chance to engage with exclusive music NFTs, allowing users to purchase and stake unique digital collectibles tied to their favorite tracks and artists. This feature aims to provide an innovative way for fans to invest in music and support their favorite creators in a new, blockchain-driven way. While these features are part of the prototype and not yet available, they reflect the platform’s potential to revolutionize how fans interact with music. The music page is designed to offer an immersive and engaging experience for all music enthusiasts, blending content discovery with innovative engagement opportunities.
+## Tokenization & Smart Contracts
+
+We tested our smart contracts using **Remix IDE**, which allowed us to simulate and verify the contract behavior in a secure environment before deploying it to the Ethereum network. The contracts were thoroughly tested for key features, including:
+
+- **NFT Creation**: Users can mint new Music NFTs by providing metadata (URI) and setting a price.
+- **NFT Trading**: Securely buy and sell NFTs with transparent ownership transfer and pricing mechanisms.
+- **NFT Staking**: Users can stake their NFTs for added utility and unstake them when required.
+- **Detailed NFT Metadata**: Access detailed information about NFTs, including ownership, price, and metadata URI.
+
+## Live Music NFTs
+
+Live Music NFTs revolutionize the way fans and artists interact by offering unique digital assets tied to live performances. Key features include:
+
+- **Exclusive Concert Access**:
+  - NFT tickets for live concerts, which are tamper-proof and transferable.
+  - Limited-edition VIP passes that grant access to backstage tours or meet-and-greet events.
+
+- **Recorded Live Performances**:
+  - Tokenized recordings of unique live performances, such as acoustic sets or remixes.
+  - Personalized NFTs with dedications or messages from the artist.
+
+- **Fan Engagement**:
+  - Fan badges as proof of attendance, unlocking perks like discounts, merchandise, or presale access.
+  - NFTs granting access to virtual or metaverse live music events.
+
+- **Collectibles**:
+  - Limited-edition digital merchandise, such as artwork, animations, or posters.
+  - Iconic moments from live performances captured and tokenized as NFTs.
+
+- **Revenue Sharing**:
+  - NFTs tied to royalties from live recordings, allowing fans to share in the artist's success.
+  - Charity auctions for special live music NFTs.
+
+- **Artist Support**:
+  - Pre-sale NFTs to fund tours or event production.
+  - Tour-specific NFTs encouraging fans to collect exclusive sets.
+
+  ![contract](public/token.PNG) 
+
 
 ---- 
 
